@@ -6,6 +6,7 @@ module.exports = {
     entry: { main: './src/index.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/hi',
         filename: 'main.js'
     },
     module: {
@@ -32,7 +33,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/index.html',
+            template: './index.html',
             filename: 'index.html'
         })
     ]
