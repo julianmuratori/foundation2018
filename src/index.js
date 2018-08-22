@@ -1,6 +1,6 @@
 
 
-import "./scss/main.scss";
-import "./scss/main.scss";
-// import charts from 'chart.js'
+// import "./scss/main.scss";
+require('../src/scss/main.scss');
+
 console.log("hello, world");

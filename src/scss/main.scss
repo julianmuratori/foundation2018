@@ -1,3 +1,16 @@
-div {
-    color: blue;
+@charset "utf-8";
+@import '~bulma/bulma';
+@import './colors.scss';
+@import './fonts.scss';
+@import './partials/_hero.scss';
+@import './partials/_foundationhighlights.scss';
+
+
+.container {
+    max-width: $desktop;
+}
+
+
+.hi {
+    background-color: $brandPrimary;
 }
