@@ -1,4 +1,4 @@
-$brandPrimary: rgb(11,58,36);
+$brandPrimary: rgb(11,58,93);
 
 $brandWhite: rgb(255,255,255);
 
@@ -15,3 +15,27 @@ $bolTab: rgb(145, 174, 41);
 $philanthropyTab: rgb(11, 58, 93);
 
 $tabSectionBackground: rgb(229, 234, 237);
+
+.white {
+    color: $brandWhite;
+}
+
+.red {
+    color: $brandRed;
+}
+
+.blue {
+    color: $brandPrimary;
+}
+
+.bg-white {
+    color: $brandWhite;
+}
+
+.bg-offWhite {
+    background-color: $brandOffWhite;
+}
+
+.bg-blue {
+    background-color: $brandPrimary;
+}

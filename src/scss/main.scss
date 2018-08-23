@@ -4,13 +4,17 @@
 @import './fonts.scss';
 @import './partials/_hero.scss';
 @import './partials/_foundationhighlights.scss';
+@import './partials/_ujamessage.scss';
 
 
 .container {
-    max-width: $desktop;
+    // max-width: $desktop;
 }
 
-
-.hi {
-    background-color: $brandPrimary;
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid $brandRed;
 }

@@ -1,3 +1,55 @@
+
+
+.foundationHighlights--header {
+    position: relative;
+    z-index: 10;
+    margin-top: 50px;
+}
+
 .foundationHighlights--portrait {
-    background-image: url('./assets/david_ronit.png');
+    background-image: url('./assets/david_ronit-gray-image@2x.png');
+    background-size: cover;
+    transform: translateY(-110px);
+}
+
+.foundationHighlights--numbers__cell {
+    border-bottom: 1px solid gray;
+    padding: 15px 0;
+    text-transform: uppercase;
+
+    h3 {
+        line-height: 1.1;
+    }
+
+    &:first-of-type {
+        padding-top: 0;
+    }
+}
+
+.lastOne {
+    border-bottom: none;
+}
+
+.foundationHighlights--numbers__charityNumber {
+    margin-top: 50px;
+    padding: 15px 5px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    line-height: 1;
+}
+
+
+
+.foundationHighlights--letter {
+    padding: 50px 100px 50px 50px;
+
+    p {
+        margin: 10px 0;
+    }
+
+    .foundationHighlights--letter__signature {
+        p {
+            margin: 0;
+        }
+    }
 }

@@ -1,0 +1,56 @@
+.ujaMessage--letter {
+    background-color: lighten($brandPrimary, 5%);
+    color: $brandWhite;
+    padding: 50px 80px;
+}
+
+.ujaMessage--headline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .ujaMessage--headline__pillars {
+        position: absolute;
+        bottom: 150px;
+    }
+
+}
+
+.ujaMessage--headline__container {
+    
+    max-width: 400px;
+
+    p {
+        margin: 15px 0;
+    }
+}
+
+.ujaMessage--letter__portraits {
+    h4 {
+        line-height: 1;
+    }
+
+    p, h4 {
+        padding-left: 60px;
+    }
+}
+
+.ujaMessage--letter__body {
+    border-top: 1px solid $brandWhite;
+
+    h5 {
+        margin: 15px 0;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    .ujaMessage--letter__postscript {
+        border-left: 3px solid $brandRed;
+        padding-left: 40px;
+        margin-top: 30px;
+    }
+}
