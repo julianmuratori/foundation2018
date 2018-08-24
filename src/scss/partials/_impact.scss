@@ -1,0 +1,27 @@
+section.impactStories {
+    margin-top: 8px;
+}
+.impactStories--header {
+    padding: 50px 0;
+}
+
+.impactStories--cell {
+    padding: 30px 60px;
+
+    p {
+        margin: 20px 0;
+    }
+}
+
+.impactStories--cell__subheader {
+    min-height: 50px;
+    margin-bottom: 30px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.impactStories--cell__right {
+    // padding-top: 75px;
+}

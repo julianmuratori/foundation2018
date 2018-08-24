@@ -20,7 +20,7 @@
                     <h4 class="white neuton">Philanthropy for a Strong Jewish Future</h4>
                 </div>
                 <div class="hero__subheader">
-                    <div class="arrow-down"></div>
+                    <div class="arrow-down-red"></div>
                     <h4 class="white">Report to the Community</h4>
                     <h1 class="white">2018</h1>
                 </div>
@@ -87,9 +87,12 @@
                     </div>
     
                     <div class="is-three-fifths column foundationHighlights--portrait">
-                        <p>Dreams without action remain</p>
-                        <p>intangible thoughts...</p>
-                        <p>Dreams with action change the future.</p>
+                        <img src="./src/scss/assets/david-ronit-image.png" alt="">
+                        <div class="foundationHighlights--portrait__text neuton white">
+                            <p>Dreams without action remain</p>
+                            <p>intangible thoughts...</p>
+                            <p class="weight700">Dreams with action change the future.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -190,23 +193,21 @@
 <!-- IMPACT STORIES WITH MODALS -->
     <section class="impactStories">
 
-        <div class="hero bg-blue">
+        <div class="hero bg-blue white weight700 is-uppercase impactStories--header">
             <div class="container">
                 <h1>The Impact</h1>
             </div>
         </div>
-
+        
         <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <p>Through the Jewish Foundation, our generous donors support hundreds of charities, projects, and programs each year.</p>
-                </div>
-            </div>
+            <div class="arrow-down-blue"></div>
             <div class="columns">
                 <div class="column is-half impactStories--cell">
-
-                    <h4>March of the Living - </h4>
-                    <h4>30th Anniversary Fund</h4>
+                    <div class="impactStories--cell__subheader">
+                        <p>Through the Jewish Foundation, our generous donors support hundreds of charities, projects, and programs each year.</p>
+                    </div>
+                    <h4 class="red weight700">March of the Living - </h4>
+                    <h4 class="red weight700">30th Anniversary Fund</h4>
 
                     <p>For 30 years, teenagers (including over 4,000 Toronto high school students), young adults and adults have experienced the
                     March of the Living, a life-changing journey to Poland and Israel. This two-week educational experience is designed to teach
@@ -217,9 +218,10 @@
                         <a href="#">Read More</a>
                     </div>
                 </div>
-                <div class="column is-half impactStories--cell">
-                    <h4>The Supplementary Financial</h4>
-                    <h4>Assistance Program (SFAP)</h4>
+                <div class="column is-half impactStories--cell impactStories--cell__right bg-offWhite">
+                    <div class="impactStories--cell__subheader"></div>
+                    <h4 class="red weight700">The Supplementary Financial</h4>
+                    <h4 class="red weight700">Assistance Program (SFAP)</h4>
 
                     <p>The Supplementary Financial Assistance Program (SFAP), developed by UJA Federation, along with its partner agencies, is a
                     comprehensive strategy to alleviate poverty and provide a critical safety net for the most financially vulnerable members
@@ -236,22 +238,27 @@
 
 <!-- FINANCIALS PAGE + MODALS -->
     <section class="financials">
-        <div class="hero">
+        <div class="hero financials--header bg-blue">
             <div class="container">
                 <div class="columns">
                     <div class="column is-half">
-                        <div class="columns">
+                        <div class="columns is-uppercase white">
                             <div class="column is-half">
+                                <h2>&nbsp;</h2>
                                 <h2>Foundation</h2>
                             </div>
                             <div class="column is-half">
-                                <h2>Financial</h2>
-                                <h2>Highlights</h2>
+                                <h2 class="weight700">Financial</h2>
+                                <h2 class="weight700">Highlights</h2>
                             </div>
                         </div>
                     </div>
                     <div class="column is-half">
-                        <img src="./src/scss/assets/pie_icon.png" alt="">
+                        <!-- <img src="./src/scss/assets/pie_icon.png" alt=""> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58px" height="58px">
+                            <image x="0px" y="0px" width="58px" height="58px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAQAAABLsoKjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCBgLMR2bi6ASAAABM0lEQVRYw+3XvUoDQRSG4XeSRVHQFDYiWljEyiaCxEJIZWMjacTC2sLOwi5gQAjW3oFVLsW9gICQyh9QVCRgoYXFZ7eFMzsrgUXUc6rhfJx59rDbrGPsUoVT5oLRLT0XmYxlReg8Dwx48YIF6ky79/FvjqKSdgL9Q0lTsclKKc9TUIYa+nvRpKyLBZvMBKNBWWidFuc52X0UFaQ0g9GI5QK2Buzy7PWP2YpvWqHJDddef5YGbZ4K903dnbfI/nfe6YU78QY3uCyci+7yA2WooYYaGkZ1pnB9aLUsNGGbIX2vX6XDAb2yUBi67te2JuiUtee/+pAMNdRQQw011FBDDTXU0D+EJsCKul6/mp1agXQxO+2p4aXr2elIr166BsT+T4XSnHSkmib1mJNeyWlJbzlp/xPeS7kH49rP4AAAAABJRU5ErkJggg=="
+                            />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -259,21 +266,49 @@
 
         <div class="financials--container container">
             <div class="columns">
-                <div class="financials--container__cell column is-half">
-                    <div>
-                        <h4>11.1 Percent <span>total investment return</span></h4>
+                <div class="financials--container__cell column is-half is-uppercase">
+                    <div class="financials--cell__flex">
+                        <div class="financials--cell__left">
+                            <h4 class="red">11.1 Percent </h4>
+                        </div>
+                        <div class="financials--cell__right">
+                            <h4 class="blue">total investment return</h4>
+                        </div>
                     </div>
-                    <div>
-                        <h4>$26.0 million <span>total grant distribution</span></h4>
+                    <div class="financials--cell__flex">
+                        <div class="financials--cell__left">
+                            <h4 class="red">$26.0 million</h4>
+                        </div>
+                        <div class="financials--cell__right">
+                            <h4 class="blue">total grant distribution</h4>
+                        </div>
+                        
                     </div>
-                    <div>
-                        <h4>$43.1 million <span>total contributions</span></h4>
+                    <div class="financials--cell__flex">
+                        <div class="financials--cell__left">
+                            <h4 class="red">$43.1 million</h4>
+                        </div>
+                        <div class="financials--cell__right">
+                            <h4 class="blue">total contributions</h4>
+                        </div>
+                        
                     </div>
-                    <div>
-                        <h4>$380.6 million <span>total assets</span></h4>
+                    <div class="financials--cell__flex">
+                        <div class="financials--cell__left">
+                            <h4 class="red">$380.6 million</h4>
+                        </div>
+                        <div class="financials--cell__right">
+                            <h4 class="blue">total assets</h4>
+                        </div>
+                        
                     </div>
-                    <div>
-                        <h4>$199.6 million <span>total planned gifts</span></h4>
+                    <div class="financials--cell__flex">
+                        <div class="financials--cell__left">
+                            <h4 class="red">$199.6 million</h4>
+                        </div>
+                        <div class="financials--cell__right">
+                            <h4 class="blue">total planned gifts</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="financials--container__cell column is-half">
@@ -287,13 +322,14 @@
 
 <!-- FACES OF PHILANTHROPY -->
     <section class="faces">
-        <div class="hero">
+        <div class="philanthropy--header hero bg-blue white is-uppercase">
             <div class="container">
                 <h1>Faces of Philanthropy</h1>
             </div>
         </div>
 
         <div class="container">
+            <div class="arrow-down-blue"></div>
             <div class="columns">
                 <div class="column is-half">
                     <p>A Jewish community like Toronto's does not just happen,</p>

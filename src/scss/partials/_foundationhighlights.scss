@@ -6,15 +6,29 @@
     margin-top: 50px;
 }
 
+// .foundationHighlights--left {
+//     position: relative;
+//     padding-top: 100%;
+// }
+
 .foundationHighlights--portrait {
-    background-image: url('./assets/david_ronit-gray-image@2x.png');
-    background-size: cover;
-    transform: translateY(-110px);
+    transform: translateY(-90px);
+    position: relative;
+}
+
+.foundationHighlights--portrait__text {
+    position: absolute;
+    bottom: 300px;
+    left: 50px;
+
+    p {
+        font-size: 1.8rem;
+    }
 }
 
 .foundationHighlights--numbers__cell {
     border-bottom: 1px solid gray;
-    padding: 15px 0;
+    padding: 20px 0;
     text-transform: uppercase;
 
     h3 {
@@ -41,7 +55,7 @@
 
 
 .foundationHighlights--letter {
-    padding: 50px 100px 50px 50px;
+    padding: 50px 125px 50px 25px;
 
     p {
         margin: 10px 0;

@@ -1,0 +1,22 @@
+section.financials {
+    margin-top: 40px;
+}
+
+.financials--header {
+    padding: 70px 0 20px;
+}
+
+.financials--cell__flex {
+    display: flex;
+    justify-content: center;
+
+    .financials--cell__left {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5px;
+    }
+    .financials--cell__right {
+        width: 60%;
+    }
+}
