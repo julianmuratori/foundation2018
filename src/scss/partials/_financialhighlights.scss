@@ -3,7 +3,16 @@ section.financials {
 }
 
 .financials--header {
-    padding: 70px 0 20px;
+    padding: 70px 20px 20px;
+
+    @include mobile {
+        padding: 20px;
+        display: flex;
+
+        h2.nbsp {
+            display: none;
+        }
+    }
 }
 
 .financials--cell__flex {

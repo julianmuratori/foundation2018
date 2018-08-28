@@ -1,0 +1,55 @@
+.leadership--header {
+    padding: 30px 0;
+}
+
+.leadership--body {
+    // padding-top: 70px;
+    background-image: url('./assets/tornoto_landscape@2x.png');
+    background-position: center;
+    background-size: cover;
+
+    @include phone {
+        background-position: left;
+    }
+}
+
+.leadership--body__leftbackground {
+    background-color: rgba(10,10,10,0.2);
+}
+
+.leadership--body__left {
+    max-width: 450px;
+    margin-left: auto;
+
+    h3 {
+        margin-bottom: 15px;
+    }
+
+    @include mobile {
+        margin: 0 auto;
+    }
+}
+
+.leadership--body__left, .leadership--logos {
+    padding-top: 50px;
+
+    @include mobile {
+        padding: 20px 0;
+    }
+
+    @include phone {
+        padding: 20px;
+    }
+}
+
+.leadership--logos__image {
+    width: 100%;
+    max-width: 450px;
+    margin: 30px 15px;
+    text-align: center;
+
+    @include mobile {
+        margin: 30px auto;
+    }
+}
+

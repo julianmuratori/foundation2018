@@ -1,0 +1,35 @@
+.doTogether {
+    margin: 50px 0;
+
+    .doTogether--body {
+        div.column {
+            padding: 60px 60px 40px;
+        }
+        h4 {
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: circle;
+        }
+    }
+
+    @include phone {
+       margin: 30px 0;
+
+       .doTogether--body {
+            div.column {
+                padding: 20px;
+            }
+        }   
+    }
+}
+
+.doTogether--header {
+    padding: 30px 0;
+    @include touch {
+        padding: 20px;
+    }
+}

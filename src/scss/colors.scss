@@ -1,6 +1,10 @@
 $brandPrimary: rgb(11,58,93);
 
+$brandPrimary-transparent: rgba(11,58,93,0.5);
+
 $brandWhite: rgb(255,255,255);
+
+$brandWhite-transparent: rgba(245,245,245, 0.5);
 
 $brandOffWhite: rgb(241,244,246);
 
@@ -38,4 +42,14 @@ $tabSectionBackground: rgb(229, 234, 237);
 
 .bg-blue {
     background-color: $brandPrimary;
+}
+
+.bg-seethrough-blue {
+    background-color: $brandPrimary-transparent;
+    // opacity: 0.5;
+}
+
+.bg-seethrough-white {
+    background-color: $brandWhite-transparent;
+    // opacity: 0.5;
 }

@@ -11,7 +11,6 @@
 <body>
 <!-- MAIN SPLASH SCREEN -->
     <header class="hero familyBackground">
-        <div class="container">
             <div class="hero__headlineContainer">
                 <div class="hero__headline">
                     <h1 class="white weight700">Jewish</h1>
@@ -25,8 +24,6 @@
                     <h1 class="white">2018</h1>
                 </div>
             </div>
-        </div>
-        
     </header>
 
 <!-- FOUNDATION HIGHLIGHTS AND LETTER FROM DAVID AND RONIT -->
@@ -119,7 +116,7 @@
                 planned givers, thank you for your vision. If you are not yet a member of the Jewish Foundation family and you see something
                 in this report that you would like to know more about, please contact us. We are here to bring your philanthropic dreams
                 to life.</p>
-                <div class="columns">
+                <div class="columns is-mobile">
                     <div class="column is-half foundationHighlights--letter__signature">
                         <img src="" alt="">
                         <p>david matlow</p>
@@ -156,16 +153,20 @@
 
 
         <div class="ujaMessage--letter column is-half">
-            <div class="ujaMessage--letter__portraits columns">
-                <div class="column is-half">
+            <div class="ujaMessage--letter__portraits columns is-mobile">
+                <div class="column is-half bruce-and-adam">
                     <img src="./src/scss/assets/bruce_leboff.png" alt="">
-                    <h4 class="neuton red">Bruce Leboff</h4>
-                    <p class="is-uppercase">Chair of the Board</p>
+                    <div>
+                        <h4 class="neuton red">Bruce Leboff</h4>
+                        <p class="is-uppercase">Chair of the Board</p>
+                    </div>
                 </div>
-                <div class="column is-half">
+                <div class="column is-half bruce-and-adam">
                     <img src="./src/scss/assets/adam_minsky.png" alt="">
-                    <h4 class="neuton red">Adam Minsky</h4>
-                    <p class="is-uppercase">President & CEO</p>
+                    <div>
+                        <h4 class="neuton red">Adam Minsky</h4>
+                        <p class="is-uppercase">President & CEO</p>
+                    </div>
                 </div>
             </div>
 
@@ -193,7 +194,7 @@
 <!-- IMPACT STORIES WITH MODALS -->
     <section class="impactStories">
 
-        <div class="hero bg-blue white weight700 is-uppercase impactStories--header">
+        <div class="bg-blue white weight700 is-uppercase impactStories--header">
             <div class="container">
                 <h1>The Impact</h1>
             </div>
@@ -238,13 +239,13 @@
 
 <!-- FINANCIALS PAGE + MODALS -->
     <section class="financials">
-        <div class="hero financials--header bg-blue">
+        <div class="financials--header bg-blue">
             <div class="container">
                 <div class="columns">
                     <div class="column is-half">
                         <div class="columns is-uppercase white">
                             <div class="column is-half">
-                                <h2>&nbsp;</h2>
+                                <h2 class="nbsp">&nbsp;</h2>
                                 <h2>Foundation</h2>
                             </div>
                             <div class="column is-half">
@@ -337,15 +338,15 @@
                 </div>
             </div>
 
-            <div class="columns">
-                <div class="column is-one-fifth is-offset-1">
+            <div class="columns faces--container">
+                <div class="column is-one-fifth is-offset-1 faces--cell">
                     <img src="./src/scss/assets/terry_nadline_walman@2x.png" alt="">
                     <h4>Terry & Nadine Walman</h4>
                     <p>Giving is a reflection of our ideals, and it is a way to show gratitude for the good fortune of our upbringing, education,
                     and community.</p>
                     <p>We hope that our gift will impact future generations, and help to safeguard the Jewish values that sustain the community.</p>
                 </div>
-                <div class="column is-one-fifth">
+                <div class="column is-one-fifth faces--cell">
                     <img src="./src/scss/assets/ruthie_ladovsky@2x.png" alt="">
                     <h4>Ruthie Ladovsky</h4>
                     <p>By setting up a donor advised fund at the Jewish Foundation, I am able to support the organizations and services that are
@@ -354,7 +355,7 @@
                     that my investment is protected for future philanthropic priorities.</p>
                     <p>This plan is one that I wholeheartedly embrace.</p>
                 </div>
-                <div class="column is-one-fifth">
+                <div class="column is-one-fifth faces--cell">
                     <img src="./src/scss/assets/jodie_kaufman@2x.png" alt="">
                     <h4>Jodie Kaufman Davis</h4>
                     <p>My children, Ella, Madeline and Jonah, are still very young, but it is important to me and my husband, Jamie, that they learn
@@ -365,7 +366,7 @@
                     future security for our students and care for our vulnerable.</p>
                     <p>I believe that if we collaborate, there is great power in individual effort!</p>
                 </div>
-                <div class="column is-one-fifth">
+                <div class="column is-one-fifth faces--cell">
                     <img src="./src/scss/assets/eric_benchetrit@2x.png" alt="">
                     <h4>Eric Benchetrit</h4>
                     <p>As the eldest son of immigrants from Morocco, my family and I directly benefitted from the network of established non-profit
@@ -654,133 +655,198 @@
     </section>
 
     <section class="doTogether">
-        <div class="hero">
+        <div class="doTogether--header bg-blue white">
             <div class="container">
                 <h1>What We Can Do Together</h1>
+            </div>
+        </div>
+        <div class="container doTogether--body blue">
+            <div class="arrow-down-blue"></div>
+            <div class="columns">
+                <div class="column is-half">
+                    <h4 class="red weight700">A Gift Today</h4>
+                    <h4 class="weight700">Charitable Funds:</h4>
+                    <p>A charitable fund allows you the flexibility to support one or more charities of your choice. It can be the center of your
+                    family's charitable efforts.</p>
 
-                <div class="columns">
-                    <div class="column is-half">
-                        <h4>A Gift Today</h4>
-                        <h4>Charitable Funds:</h4>
-                        <p>A charitable fund allows you the flexibility to support one or more charities of your choice. It can be the center of your
-                        family's charitable efforts.</p>
+                    <h4 class="weight700">Donor advised funds:</h4>
+                    <p>Similar to a private foundation, a Donor Advised Fund allows you to recommend distributions from the Fund to charities of
+                    your choice.</p>
 
-                        <h4>Donor advised funds:</h4>
-                        <p>Similar to a private foundation, a Donor Advised Fund allows you to recommend distributions from the Fund to charities of
-                        your choice.</p>
+                    <ul>
+                        <li>
+                            <p>May be created with a minimum of $10,000</p>
+                        </li>
+                        <li>
+                            <p>Less burdensome and less expensive than operating a private foundation</p>
+                        </li>
+                        <li>
+                            <p>Gifts of appreciated securities can be donated “in-kind” without any capital gains tax</p>
+                        </li>
+                        <li>
+                            <p>Allows donors to recommend unlimited grants to registered charities each year</p>
+                        </li>
+                        <li>
+                            <p>Fund may be anonymous</p>
+                        </li>
+                    </ul>
 
-                        <ul>
-                            <li>
-                                <p>May be created with a minimum of $10,000</p>
-                            </li>
-                            <li>
-                                <p>Less burdensome and less expensive than operating a private foundation</p>
-                            </li>
-                            <li>
-                                <p>Gifts of appreciated securities can be donated “in-kind” without any capital gains tax</p>
-                            </li>
-                            <li>
-                                <p>Allows donors to recommend unlimited grants to registered charities each year</p>
-                            </li>
-                            <li>
-                                <p>Fund may be anonymous</p>
-                            </li>
-                        </ul>
+                    <h4 class="weight700">Other giving vehicles:</h4>
+                    <ul>
+                        <li>
+                            <p class="weight700">Charitable Remainder Trust</p>
+                            <p>An immediate tax receipt (present value based on life expectancy) for a future gift of real estate or assets</p>
+                        </li>
+                        <li>
+                            <p class="weight700">Gifts of RRSP’s or RRIF’s</p>
+                            <p>An ideal way to offset taxes owing by an estate</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column is-half">
+                    <h4 class="red weight700">A Gift in the Future</h4>
+                    <h4 class="weight700">Gift planning:</h4>
+                    <p>A Planned Gift is a charitable gift such as life insurance or a gift through your Will, ultimately creating a Charitable
+                    Fund offering your estate significant tax benefits.</p>
 
-                        <h4>Other giving vehicles:</h4>
-                        <ul>
-                            <li>
-                                <p>Charitable Remainder Trust</p>
-                                <p>An immediate tax receipt (present value based on life expectancy) for a future gift of real estate or assets</p>
-                            </li>
-                            <li>
-                                <p>Gifts of RRSP’s or RRIF’s</p>
-                                <p>An ideal way to offset taxes owing by an estate</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="column is-half">
-                        <h4>A Gift in the Future</h4>
-                        <h4>Gift planning:</h4>
-                        <p>A Planned Gift is a charitable gift such as life insurance or a gift through your Will, ultimately creating a Charitable
-                        Fund offering your estate significant tax benefits.</p>
+                    <h4 class="weight700">Gifts of Life Insurance</h4>
+                    <p class="weight700">Existing policies</p>
+                    <p>By transferring ownership of an existing life insurance policy to the Jewish Foundation, the donor is entitled to an immediate
+                    tax receipt for the fair market value of the policy.</p>
+                    <p>In addition, all future premium payments are eligible for a donation tax receipt.</p>
 
-                        <h4>Gifts of Life Insurance</h4>
-                        <p>Existing policies</p>
-                        <p>By transferring ownership of an existing life insurance policy to the Jewish Foundation, the donor is entitled to an immediate
-                        tax receipt for the fair market value of the policy.</p>
-                        <p>In addition, all future premium payments are eligible for a donation tax receipt.</p>
+                    <p class="weight700">New Policies</p>
+                    <p>By designating the Jewish Foundation as owner and beneficiary of the life insurance policy, premium payments will be made
+                    to the Jewish Foundation by the donor annually and are eligible for a donation tax receipt.</p>
 
-                        <p>New Policies</p>
-                        <p>By designating the Jewish Foundation as owner and beneficiary of the life insurance policy, premium payments will be made
-                        to the Jewish Foundation by the donor annually and are eligible for a donation tax receipt.</p>
-
-                        <h4>Charitable Bequests:</h4>
-                        <p>A gift in your Will is a simple and thoughtful way to leave a legacy. Whether it is a set amount or a percentage of the estate,
-                        donors can make a difference for generations to come.</p>
-                        <p>Please consult your tax or estate planning professional to determine
-                        what is best for you.</p>
-                    </div>
+                    <h4>Charitable Bequests:</h4>
+                    <p>A gift in your Will is a simple and thoughtful way to leave a legacy. Whether it is a set amount or a percentage of the estate,
+                    donors can make a difference for generations to come.</p>
+                    <p class="weight700">Please consult your tax or estate planning professional to determine
+                    what is best for you.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="partners">
-        <div class="hero">
+    <section class="leadership">
+        <div class="bg-blue white has-text-centered leadership--header">
             <div class="container">
-                <h1>Leadership/Partners</h1>
-                <h2>We thank our leadership and our strategic partners</h2>
+                <h1>Leadership & Partners</h1>
+                <h3>We thank our leadership and our strategic partners</h3>
             </div>
         </div>
-        <div class="container">
-            <div class="columns">
-                <div class="column is-half">
-                    <h3>Foundation Trustees</h3>
-                    <div class="columns">
-                        <div class="column is-half">
-                            <p>Leonard Abramsky</p>
-                            <p>Stephen Altbaum</p>
-                            <p>Stephen Bloom</p>
-                            <p>Eric Cohen</p>
-                            <p>Joel Cuperfain</p>
-                            <p>Lisa Draper</p>
-                            <p>Jordan Gnat</p>
-                            <p>Mark Grammer</p>
-                            <p>Alison Himel</p>
-                            <p>Warren Kimel</p>
-                            <p>Jay Klein</p>
-                            <p>Michael Kuhl</p>
-                            <p>Francy Kussner</p>
-                            <p>Bruce Leboff</p>
-                            <p>Joseph Lebovic</p>
-                        </div>
-                        <div class="column is-half">
-                            <p>David Matlow, Chair</p>
-                            <p>Harley Mintz</p>
-                            <p>Faye Minuk</p>
-                            <p>Mitchell Oelbaum</p>
-                            <p>David Posluns</p>
-                            <p>Keith Ray, Vice-Chair</p>
-                            <p>Craig Rimer</p>
-                            <p>Laurie Sheff</p>
-                            <p>Anthony Sigel</p>
-                            <p>Leah Silber</p>
-                            <p>Fern Simpson Reich</p>
-                            <p>Neil Sternthal</p>
-                            <p>Mona Taylor</p>
-                            <p>Dov Zevy</p>
+        <div class="leadership--body columns">
+            <div class="bg-seethrough-blue column is-half">
+                <!-- <div class="container"> -->
+                    <div class="leadership--body__left white">
+                        <h3>Foundation Trustees</h3>
+                        <div class="columns is-mobile">
+                            <div class="column is-half">
+                                <p>Leonard Abramsky</p>
+                                <p>Stephen Altbaum</p>
+                                <p>Stephen Bloom</p>
+                                <p>Eric Cohen</p>
+                                <p>Joel Cuperfain</p>
+                                <p>Lisa Draper</p>
+                                <p>Jordan Gnat</p>
+                                <p>Mark Grammer</p>
+                                <p>Alison Himel</p>
+                                <p>Warren Kimel</p>
+                                <p>Jay Klein</p>
+                                <p>Michael Kuhl</p>
+                                <p>Francy Kussner</p>
+                                <p>Bruce Leboff</p>
+                                <p>Joseph Lebovic</p>
+                            </div>
+                            <div class="column is-half">
+                                <p>David Matlow, Chair</p>
+                                <p>Harley Mintz</p>
+                                <p>Faye Minuk</p>
+                                <p>Mitchell Oelbaum</p>
+                                <p>David Posluns</p>
+                                <p>Keith Ray, Vice-Chair</p>
+                                <p>Craig Rimer</p>
+                                <p>Laurie Sheff</p>
+                                <p>Anthony Sigel</p>
+                                <p>Leah Silber</p>
+                                <p>Fern Simpson Reich</p>
+                                <p>Neil Sternthal</p>
+                                <p>Mona Taylor</p>
+                                <p>Dov Zevy</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="column is-half">
-                    <img src="./src/scss/assets/cidel_logo.png" alt="">
-                    <img src="./src/scss/assets/fabricland_logo.png" alt="">
-                    <img src="./src/scss/assets/israel_bonds_logo.png" alt="">
-                    <img src="./src/scss/assets/JT_funders_network_logo.png" alt="">
-                    <img src="./src/scss/assets/mawer_logo.png" alt="">
-                </div>
+                <!-- </div> -->
             </div>
+            <div class="bg-seethrough-white column is-half leadership--logos">
+                <div class="leadership--logos__image">
+                    <img src="./src/scss/assets/cidel_logo.png" alt="">
+                </div>
+                <div class="leadership--logos__image">
+                    <img src="./src/scss/assets/fabricland_logo.png" alt="">
+                </div>
+                <div class="leadership--logos__image">
+                    <img src="./src/scss/assets/israel_bonds_logo.png" alt="">
+                </div>
+                <div class="leadership--logos__image">
+                    <img src="./src/scss/assets/JT_funders_network_logo.png" alt="">
+                </div>
+                <div class="leadership--logos__image">
+                    <img src="./src/scss/assets/mawer_logo.png" alt="">
+                </div>                
+            </div>
+            <!-- <div class="container">
+                <div class="columns">
+                    <div class="column is-one-half">
+                        <div class="leadership--body__left">
+                            <h3>Foundation Trustees</h3>
+                            <div class="columns">
+                                <div class="column is-half">
+                                    <p>Leonard Abramsky</p>
+                                    <p>Stephen Altbaum</p>
+                                    <p>Stephen Bloom</p>
+                                    <p>Eric Cohen</p>
+                                    <p>Joel Cuperfain</p>
+                                    <p>Lisa Draper</p>
+                                    <p>Jordan Gnat</p>
+                                    <p>Mark Grammer</p>
+                                    <p>Alison Himel</p>
+                                    <p>Warren Kimel</p>
+                                    <p>Jay Klein</p>
+                                    <p>Michael Kuhl</p>
+                                    <p>Francy Kussner</p>
+                                    <p>Bruce Leboff</p>
+                                    <p>Joseph Lebovic</p>
+                                </div>
+                                <div class="column is-half">
+                                    <p>David Matlow, Chair</p>
+                                    <p>Harley Mintz</p>
+                                    <p>Faye Minuk</p>
+                                    <p>Mitchell Oelbaum</p>
+                                    <p>David Posluns</p>
+                                    <p>Keith Ray, Vice-Chair</p>
+                                    <p>Craig Rimer</p>
+                                    <p>Laurie Sheff</p>
+                                    <p>Anthony Sigel</p>
+                                    <p>Leah Silber</p>
+                                    <p>Fern Simpson Reich</p>
+                                    <p>Neil Sternthal</p>
+                                    <p>Mona Taylor</p>
+                                    <p>Dov Zevy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <img src="./src/scss/assets/cidel_logo.png" alt="">
+                        <img src="./src/scss/assets/fabricland_logo.png" alt="">
+                        <img src="./src/scss/assets/israel_bonds_logo.png" alt="">
+                        <img src="./src/scss/assets/JT_funders_network_logo.png" alt="">
+                        <img src="./src/scss/assets/mawer_logo.png" alt="">
+                    </div>
+                </div>
+            </div> -->
         </div>
     </section>
 

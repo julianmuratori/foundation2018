@@ -1,6 +1,15 @@
 .legacyOfLife {
     padding: 60px 0;
 
+    @include touch {
+        padding: 60px;
+        margin-bottom: 50px;
+    }
+
+    @include phone {
+        padding: 40px 20px;
+    }
+
     .legacyOfLife--header {
         text-transform: uppercase;
         margin-bottom: 50px;

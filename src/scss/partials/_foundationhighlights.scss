@@ -4,16 +4,28 @@
     position: relative;
     z-index: 10;
     margin-top: 50px;
-}
 
-// .foundationHighlights--left {
-//     position: relative;
-//     padding-top: 100%;
-// }
+    @include mobile {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
 
 .foundationHighlights--portrait {
     transform: translateY(-90px);
     position: relative;
+
+    @include mobile {
+        img {
+            display: none;
+        }
+
+        transform: translateY(0);
+        background-image: url('./assets/david-ronit-image.png');
+        height: 600px;
+        // width: 50%;
+        background-size: cover;
+    }
 }
 
 .foundationHighlights--portrait__text {
@@ -23,6 +35,14 @@
 
     p {
         font-size: 1.8rem;
+    }
+}
+
+.foundationHighlights--left__numbers {
+    @include mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
@@ -37,11 +57,32 @@
 
     &:first-of-type {
         padding-top: 0;
+        
+        @include mobile {
+            padding-top: 20px;
+        }
     }
+
+    @include mobile {
+        margin: 0 10px;
+        width: calc(33.3% - 20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 550px) {
+        width: calc(50% - 20px);
+    }
+
 }
 
 .lastOne {
     border-bottom: none;
+
+    @include mobile {
+        border-bottom: 1px solid gray;
+    }
 }
 
 .foundationHighlights--numbers__charityNumber {
@@ -50,6 +91,10 @@
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     line-height: 1;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 
@@ -65,5 +110,13 @@
         p {
             margin: 0;
         }
+    }
+
+    @include mobile {
+        padding: 50px;
+    }
+
+    @include phone {
+        padding: 50px 20px;
     }
 }

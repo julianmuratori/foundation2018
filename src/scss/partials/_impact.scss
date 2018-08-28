@@ -2,7 +2,7 @@ section.impactStories {
     margin-top: 8px;
 }
 .impactStories--header {
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 
 .impactStories--cell {
@@ -10,6 +10,10 @@ section.impactStories {
 
     p {
         margin: 20px 0;
+    }
+
+    @include phone {
+        padding: 30px;
     }
 }
 
@@ -23,5 +27,9 @@ section.impactStories {
 }
 
 .impactStories--cell__right {
-    // padding-top: 75px;
+    @include phone {
+        .impactStories--cell__subheader {
+            display: none;
+        }
+    }
 }

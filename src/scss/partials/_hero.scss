@@ -8,10 +8,33 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include touch {
+        background-size: cover;
+        background-position-x: 70%;
+    }
+
 }
 
 .hero__headlineContainer {
-    padding-top: 100px;
+    padding-top: 150px;
+
+    @include fullhd {
+        margin-left: 250px;
+    }
+
+    @include widescreen {
+        margin-left: 200px;
+    }
+
+    @include desktop {
+        margin-left: 150px;
+    }
+    
+    @include touch {
+        margin-left: 50px;
+    }
+
 }
 
 .hero__headline {

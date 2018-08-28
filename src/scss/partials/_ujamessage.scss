@@ -2,6 +2,10 @@
     background-color: lighten($brandPrimary, 5%);
     color: $brandWhite;
     padding: 50px 80px;
+
+    @include phone {
+        padding: 50px 20px;
+    }
 }
 
 .ujaMessage--headline {
@@ -10,10 +14,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px 0;
 
     .ujaMessage--headline__pillars {
         position: absolute;
         bottom: 150px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
 }
@@ -25,6 +34,18 @@
     p {
         margin: 15px 0;
     }
+
+    @include phone {
+        padding: 0 20px;
+        
+        h1:nth-child(3) {
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
 }
 
 .ujaMessage--letter__portraits {
@@ -34,6 +55,21 @@
 
     p, h4 {
         padding-left: 60px;
+    }
+
+    @include phone {
+        display: flex;
+        flex-direction: column;
+
+        p, h4 {
+
+        }
+        
+        .bruce-and-adam {
+            width: 100% !important;
+            display: flex;
+            // padding-top: 15px;
+        }
     }
 }
 
