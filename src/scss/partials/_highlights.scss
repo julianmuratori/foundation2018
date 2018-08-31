@@ -1,0 +1,202 @@
+.highlights--header {
+    margin: 50px auto;
+
+    h1 {
+        padding-bottom: 20px;
+    }
+}
+
+.highlights--nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 15px solid $brandGrey;
+}
+
+.button-highlights {
+    display: table;
+    min-height: 80px;
+    
+    a {
+        transition: all .1s;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        display: table-cell; 
+        vertical-align: middle;
+        padding: 5px 20px;
+        color: $brandWhite;
+        line-height: 1.2;
+        font-size: 1.8rem;
+        height: 100%;
+
+        &:hover {
+            background-color: $highlights-hover;
+        }
+    }
+}
+
+.button-legacy {
+    background-color: $legacyTab;
+}
+
+.button-pac {
+    background-color: $pacTab;
+}
+
+.button-bol {
+    background-color: $bolTab;
+}
+
+.button-philanthropy {
+    background-color: $philanthropyTab;
+}
+
+.highlights--container {
+    padding-bottom: 60px;
+
+    .highlights--container__body {
+        padding: 25px 50px 25px 100px;
+
+        .pacBody, .bolBody {
+            margin-bottom: 30px;
+            padding-right: 80px;
+        }
+
+        h4 {
+            margin-bottom: 15px;
+        }
+
+        @include mobile {
+            padding: 25px 50px;
+        }
+    }
+}
+
+.highlights--container__cardheader {
+        position: relative;
+
+        .legacy--header, .pac--header, .bol--header, .philanthropy--header {
+            position: absolute;
+            display: block;
+            width: 100%;
+            padding: 10px 0 10px 100px;
+            bottom: 20px;
+            font-size: 5.6rem;
+
+            span {
+                font-size: 2.2rem;
+            }
+
+            @include mobile {
+                padding-left: 50px;
+            }
+        }
+        .philanthropy--header {
+            font-size: 4.2rem;
+        }
+}
+
+section.highlights div.highlights--container .highlights--sideCard {
+    padding: 0 50px 40px !important;
+
+    @include mobile {
+        padding: 25px 50px 50px 50px !important;       
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.highlights--sideCard__legacy {
+    max-height: 700px;
+    background-color: $highlights-hover;
+
+    @include mobile {
+        max-height: none;
+    }
+}
+
+.highlights--sideCard__pac {
+    h4, p:not(first-of-type) {
+        margin-bottom: 15px;
+    }
+}
+
+.highlights--sideCard__pacQuote {
+    padding-right: 40px;
+    padding-top: 40px;
+
+    @include mobile {
+        padding-left: 50px;
+    }
+
+    .neuton {
+        margin-bottom: 20px;
+    }
+}
+
+.bol--button {
+    margin: 40px auto 0;
+}
+
+.highlights--container__lojegift {
+    padding-left: 100px;
+
+    @include mobile {
+        padding: 25px 50px 25px;
+        display: flex;
+
+        .is-1 {
+            max-width: 75px;
+        }
+    }
+}
+
+
+
+.highlights--sideCard__philanthropy {
+    .portrait {
+        img {
+                width: 100%;
+        }
+        max-width: calc(165px * 1.5);
+        margin: 0 auto;
+
+        @include touch {
+            max-width: 165px;
+        }
+    }
+
+    @include fullhd {
+        min-height: 675px;
+    }
+}
+
+.highlights--sideCard__photoCaption {
+    text-align: right;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+}
+
+.teenPhilanthropy--body {
+    h4, p {
+        max-width: 450px;
+
+        @include mobile {
+            max-width: 700px;
+        }
+    }
+
+    h4 {
+        line-height: 1.2;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.teenPhilanthropy--subheader {
+    border-left: 5px solid $brandRed;
+    margin: 20px 0 0px 100px;
+    padding-left: 30px;
+}

@@ -5,6 +5,11 @@ section.impactStories {
     padding: 50px 20px;
 }
 
+.impactStories--cell__left > .impactStories--cell__subheader {
+    border-left: 5px solid $brandRed;
+    padding-left: 25px;
+}
+
 .impactStories--cell {
     padding: 30px 60px;
 
@@ -24,6 +29,26 @@ section.impactStories {
     p {
         margin: 0;
     }
+
+    @include touch {
+        min-height: 75px;
+    }
+
+    @include mobile {
+        min-height: 0;
+    }
+}
+
+.impactStories--cell__body {
+    min-height: 280px;
+
+    @include touch {
+        min-height: 315px;
+    }
+
+    @include mobile {
+        min-height: 210px;
+    }
 }
 
 .impactStories--cell__right {
@@ -31,5 +56,11 @@ section.impactStories {
         .impactStories--cell__subheader {
             display: none;
         }
+    }
+}
+
+.modal.sfap {
+    .modal-background {
+        background-color: rgba(10,10,10,0.5);
     }
 }

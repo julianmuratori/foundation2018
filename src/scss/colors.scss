@@ -8,15 +8,19 @@ $brandWhite-transparent: rgba(245,245,245, 0.5);
 
 $brandOffWhite: rgb(241,244,246);
 
+$brandGrey: rgb(242, 230, 236);
+
 $brandRed: rgb(238, 49, 35);
 
 $legacyTab: rgb(133, 24, 83);
 
-$advisoryTab: rgb(238, 49, 35);
+$pacTab: rgb(238, 49, 35);
 
 $bolTab: rgb(145, 174, 41);
 
 $philanthropyTab: rgb(11, 58, 93);
+
+$highlights-hover: rgb(123,108,70);
 
 $tabSectionBackground: rgb(229, 234, 237);
 
@@ -33,7 +37,7 @@ $tabSectionBackground: rgb(229, 234, 237);
 }
 
 .bg-white {
-    color: $brandWhite;
+    background-color: $brandWhite;
 }
 
 .bg-offWhite {
@@ -52,4 +56,24 @@ $tabSectionBackground: rgb(229, 234, 237);
 .bg-seethrough-white {
     background-color: $brandWhite-transparent;
     // opacity: 0.5;
+}
+
+.bg-red {
+    background-color: $brandRed;
+}
+
+.bg-legacy {
+    background-color: $legacyTab;
+}
+
+.bg-pac {
+    background-color: $pacTab;
+}
+
+.bg-bol {
+    background-color: $bolTab;
+}
+
+.bg-grey {
+    background-color: $brandGrey;
 }

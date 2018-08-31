@@ -16,6 +16,12 @@
         }
     }
 
+    @include mobile {
+        .doTogether--body div.column {
+            padding: 10px 60px;
+        }
+    }
+
     @include phone {
        margin: 30px 0;
 
