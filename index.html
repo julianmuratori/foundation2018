@@ -18,7 +18,10 @@
                     <h3 class="white is-uppercase">Of Greater Toronto</h3>
                     <h4 class="white neuton is-italic">Philanthropy for a Strong Jewish Future</h4>
                 </div>
-                <div class="hero__subheader">
+                <div class="hero__tabletImage">
+                    <img src="./src/scss/assets/ipad-image.png" alt="">
+                </div>
+                <div class="hero__subheader is-uppercase">
                     <div class="arrow-down-red"></div>
                     <h4 class="white">Report to the Community</h4>
                     <h1 class="white">2018</h1>
@@ -94,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="is-6 column foundationHighlights--letter">
+            <div class="is-6 column foundationHighlights--letter blue">
                 <p>The Jewish Foundation of Greater Toronto is here to bring your philanthropic dreams to life.</p>
                 <p>We all have dreams. For ourselves, our families, our community, our country and our world. But we are not just dreamers,
                 we are doers. Dreams without action remain intangible thoughts. Dreams with action change the future.</p>
@@ -283,10 +286,10 @@
         <div class="financials--container container">
             <div class="arrow-down-blue"></div>
             <div class="columns">
-                <div class="financials--container__left column is-half is-uppercase">
+                <div class="financials--container__left column is-half is-uppercase arial">
                     <div class="financials--cell__flex">
                         <div class="financials--cell__left">
-                            <h4 class="red">11.1 Percent </h4>
+                            <h4 class="red weight900">11.1 Percent </h4>
                         </div>
                         <div class="financials--cell__right">
                             <h4 class="blue">total investment return</h4>
@@ -294,7 +297,7 @@
                     </div>
                     <div class="financials--cell__flex">
                         <div class="financials--cell__left">
-                            <h4 class="red">$26.0 million</h4>
+                            <h4 class="red weight900">$26.0 million</h4>
                         </div>
                         <div class="financials--cell__right">
                             <h4 class="blue">total grant distribution</h4>
@@ -303,7 +306,7 @@
                     </div>
                     <div class="financials--cell__flex">
                         <div class="financials--cell__left">
-                            <h4 class="red">$43.1 million</h4>
+                            <h4 class="red weight900">$43.1 million</h4>
                         </div>
                         <div class="financials--cell__right">
                             <h4 class="blue">total contributions</h4>
@@ -312,7 +315,7 @@
                     </div>
                     <div class="financials--cell__flex">
                         <div class="financials--cell__left">
-                            <h4 class="red">$380.6 million</h4>
+                            <h4 class="red weight900">$380.6 million</h4>
                         </div>
                         <div class="financials--cell__right">
                             <h4 class="blue">total assets</h4>
@@ -321,22 +324,107 @@
                     </div>
                     <div class="financials--cell__flex">
                         <div class="financials--cell__left">
-                            <h4 class="red">$199.6 million</h4>
+                            <h4 class="red weight900">$199.6 million</h4>
                         </div>
                         <div class="financials--cell__right">
                             <h4 class="blue">total planned gifts</h4>
                         </div>
                     </div>
+                    <div class="financials--left bg-grey blue">
+                        <p>The Jewish Foundation of Greater Toronto's most recent fiscal year ended June 30, 2018. The following provides a summary of the Foundation's financial results.</p>
+                    </div>
                 </div>
                 <div class="financials--container__right column is-half">
+                    <div class="blue financials--right">
+                        <h4 class="red weight700 is-uppercase">Investment Management & Philosophy</h4>
+                        <p>The Jewish Foundation carefully invests its funds in accordance with an investment policy designed to produce long-term returns commensurate with an appropriate level of rish. This approach balances the need for stability in achieving the distribution objectives of the Foundation and generating sufficient return in order to maintain its real purchasing power.</p>
+                        <p>The portfolio is structured to allow participation in rising markets while minimizing losses during times of market distress. The Foundation's Investment Advisory Committe, with the assistance of its consultant, Pavilion Advisory Group Inc., meeets regularly to review policies, set strategy, discuss performance, and select investment managers.</p>
+                    </div>
                     <div class="financials--container__button standardbutton standardbutton--red bg-red" id="financials">
                         <a href="#" class="white is-uppercase"><h4>Financial Results</h4></a>
                     </div>
                     <p>For an in-depth breakdown, click above</p>
                     <div class="modal financial" id="financialmodal">
                         <div class="modal-background"></div>
-                            <div class="container">
-                                div.columns
+                            <div class="financialsModal modal-content bg-offWhite">
+                                <div class="financialsModal--header">
+                                    <h4 class="red is-uppercase weight700">Growth Summary 2017-18</h4>
+                                    <h4 class="is-uppercase blue has-blue-underline">(In Thousands)</h4>
+                                </div>
+                                <div class="financialsModal--body is-uppercase blue">
+                                    <div class="financialsModal--body__cell has-blue-underline">
+                                        <p><span class="weight700">Assets Under Management,</span> July 1, 2017</p>
+                                        <p>$331,190</p>
+                                    </div>
+                                    <div class="financialsModal--body__cell">
+                                        <p>Contributions</p>
+                                        <p>43,117</p>
+                                    </div>
+                                    <div class="financialsModal--body__cell has-blue-underline">
+                                        <p>Grant Distributions</p>
+                                        <p>-26,064</p>
+                                    </div>
+                                    <div class="financialsModal--body__cell has-blue-underline">
+                                        <p>Investment Return</p>
+                                        <p>32,323</p>
+                                    </div>
+                                    <div class="financialsModal--body__cell">
+                                        <p><span class="weight700">Assets Under Management,</span> June 30, 2018</p>
+                                        <p>$380,566</p>
+                                    </div>
+                                </div>
+                                <div class="financialsModal--footer blue">
+                                    <h4 class="red weight700 has-blue-underline">Grant Distributions</h4>
+                                    <p>In partnership with our generous donors, the Jewish Foundation distributed more than $26 million to over 450 organizations and programs.</p>
+                                    <ul>
+                                        <li>
+                                            <p>For a complete list of Grant Distributions, please visit our website: <a href="https://www.jewishfoundationtoronto.com">jewishfoundationtoronto.com</a></p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="financialsModal--footer__IAC">
+                                        <h4 class="red weight700 is-uppercase has-blue-underline">Investment Advisory Committee</h4>
+                                        <p>Reporting to the trustees, the IAC oversees the management of the Foundation's assets. We thank them for their invaluable time and commitment to the Jewish community.</p>
+                                        <div>
+                                            <p>Leonard Abramsky</p>
+                                            <p>Blair Bernholtz</p>
+                                            <p>Mark Caplan</p>
+                                            <p>Peter Fink</p>
+                                        </div>
+                                        <div>
+                                            <p>Ira Gluskin</p>
+                                            <p>Mark Grammer, Chair</p>
+                                            <p>David Matlow</p>
+                                            <p>Davis Posluns</p>
+                                        </div>
+                                        <div>
+                                            <p>Janet Rabovsky</p>
+                                            <p>John Sherrington</p>
+                                            <p>Peter Sklar</p>
+                                            <p>Benjamin Tal</p>
+                                        </div>
+                                        <div>
+                                            <p>Elias Toby</p>
+                                            <p>Harold Wolkin</p>
+                                            <p>Peter Zaltz</p>
+                                        </div>
+                                    </div>
+                                    <div class="financialsModal--footer__investment">
+                                        <h4 class="red is-uppercase weight700 has-blue-underline">Annualized Rate of Return</h4>
+                                        <div>
+                                            <p class="is-uppercase">1 Year</p>
+                                            <p class="weight700">11.1%</p>
+                                        </div>
+                                        <div>
+                                            <p class="is-uppercase">3 Year</p>
+                                            <p class="weight700">6.8%</p>
+                                        </div>
+                                        <div>
+                                            <p class="is-uppercase">5 Year</p>
+                                            <p class="weight700">9.3%</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         <button class="modal-close" id="close-sfap"></button>
                     </div>
@@ -364,42 +452,58 @@
 
             <div class="columns faces--container">
                 <div class="column is-one-fifth is-offset-1 philanthropy--cell">
-                    <img src="./src/scss/assets/terry_nadline_walman@2x.png" alt="">
-                    <h4 class="red weight700">Terry & Nadine Walman</h4>
-                    <p>Giving is a reflection of our ideals, and it is a way to show gratitude for the good fortune of our upbringing, education,
-                    and community.</p>
-                    <p>We hope that our gift will impact future generations, and help to safeguard the Jewish values that sustain the community.</p>
+                    <div class="philanthropy--cell__portrait">
+                        <img src="./src/scss/assets/terry_nadline_walman@2x.png" alt="">
+                        <h4 class="red weight700">Terry & Nadine Walman</h4>
+                    </div>
+                    <div class="philanthropy--cell__body">
+                        <p>Giving is a reflection of our ideals, and it is a way to show gratitude for the good fortune of our upbringing, education,
+                        and community.</p>
+                        <p>We hope that our gift will impact future generations, and help to safeguard the Jewish values that sustain the community.</p>
+                    </div>
                 </div>
                 <div class="column is-one-fifth philanthropy--cell">
-                    <img src="./src/scss/assets/ruthie_ladovsky@2x.png" alt="">
-                    <h4 class="red weight700">Ruthie Ladovsky</h4>
-                    <p>By setting up a donor advised fund at the Jewish Foundation, I am able to support the organizations and services that are
-                    meaningful to me now... both here in our community and in Israel.</p>
-                    <p>With the expertise of the fund managers, my fund continues to grow and to be distributed to the causes I chose. I also know
-                    that my investment is protected for future philanthropic priorities.</p>
-                    <p>This plan is one that I wholeheartedly embrace.</p>
+                    <div class="philanthropy--cell__portrait">
+                        <img src="./src/scss/assets/ruthie_ladovsky@2x.png" alt="">
+                        <h4 class="red weight700">Ruthie Ladovsky</h4>
+                    </div>
+                    <div class="philanthropy--cell__body">
+                        <p>By setting up a donor advised fund at the Jewish Foundation, I am able to support the organizations and services that are
+                            meaningful to me now... both here in our community and in Israel.</p>
+                        <p>With the expertise of the fund managers, my fund continues to grow and to be distributed to the causes I chose. I also know
+                            that my investment is protected for future philanthropic priorities.</p>
+                        <p>This plan is one that I wholeheartedly embrace.</p>
+                    </div>
                 </div>
                 <div class="column is-one-fifth philanthropy--cell">
-                    <img src="./src/scss/assets/jodie_kaufman@2x.png" alt="">
-                    <h4 class="red weight700">Jodie Kaufman Davis</h4>
-                    <p>My children, Ella, Madeline and Jonah, are still very young, but it is important to me and my husband, Jamie, that they learn
-                    early the importance of supporting our community. And they get it! Part of their birthday money goes to charity, and they
-                    have their own tzedakah boxes.</p>
-                    <p>I am passionate about doing everything in my power to ensure the vibrancy and strength of our community, and inspiring my
-                    friends and peers to embrace the responsibility of giving back. It is my goal that by engaging young people we can create
-                    future security for our students and care for our vulnerable.</p>
-                    <p>I believe that if we collaborate, there is great power in individual effort!</p>
+                    <div class="philanthropy--cell__portrait">
+                        <img src="./src/scss/assets/jodie_kaufman@2x.png" alt="">
+                        <h4 class="red weight700">Jodie Kaufman Davis</h4>
+                    </div>
+                    <div class="philanthropy--cell__body">
+                        <p>My children, Ella, Madeline and Jonah, are still very young, but it is important to me and my husband, Jamie, that they learn
+                            early the importance of supporting our community. And they get it! Part of their birthday money goes to charity, and
+                            they have their own tzedakah boxes.</p>
+                        <p>I am passionate about doing everything in my power to ensure the vibrancy and strength of our community, and inspiring my
+                            friends and peers to embrace the responsibility of giving back. It is my goal that by engaging young people we can create
+                            future security for our students and care for our vulnerable.</p>
+                        <p>I believe that if we collaborate, there is great power in individual effort!</p>
+                    </div>
                 </div>
                 <div class="column is-one-fifth philanthropy--cell">
-                    <img src="./src/scss/assets/eric_benchetrit@2x.png" alt="">
-                    <h4 class="red weight700">Eric Benchetrit</h4>
-                    <p>As the eldest son of immigrants from Morocco, my family and I directly benefitted from the network of established non-profit
-                    organizations that the Jewish community had built in Toronto, providing financial support and subsidizing our education in
-                    the Jewish Day School system. Despite our modest means, we never lacked for essentials and grew up with a full appreciation
-                    of Jewish tradition and pride in our Moroccan heritage.</p>
-                    <p>My professional life in the insurance and financial services sector provides me an opportunity to encourage others to give
-                    back, utilizing tax and estate planning vehicles. I am honoured to serve on the Professional Advisory Committee of the Jewish
-                    Foundation with other like-minded professionals.</p>
+                    <div class="philanthropy--cell__portrait">
+                        <img src="./src/scss/assets/eric_benchetrit@2x.png" alt="">
+                        <h4 class="red weight700">Eric Benchetrit</h4>
+                    </div>
+                    <div class="philanthropy--cell__body">
+                        <p>As the eldest son of immigrants from Morocco, my family and I directly benefitted from the network of established non-profit
+                            organizations that the Jewish community had built in Toronto, providing financial support and subsidizing our education
+                            in the Jewish Day School system. Despite our modest means, we never lacked for essentials and grew up with a full appreciation
+                            of Jewish tradition and pride in our Moroccan heritage.</p>
+                        <p>My professional life in the insurance and financial services sector provides me an opportunity to encourage others to give
+                            back, utilizing tax and estate planning vehicles. I am honoured to serve on the Professional Advisory Committee of the
+                            Jewish Foundation with other like-minded professionals.</p>
+                    </div>
                 </div>
             </div>
 
@@ -458,7 +562,7 @@
                         <p><span class="weight700">With gratitude</span> The Jewish Foundation of Greater Toronto honours the memory of the following individuals who had the vision
                         and foresight to leave a legacy to benefit our community between July 1, 2017 – June 30, 2018</p>
                     </div>
-                    <div class="columns">
+                    <div class="columns is-mobile legacyOfLife--body">
                         <div class="column one-third">
                             <p>Harvey Border z"l</p>
                             <p>Gerald Cohen z"l</p>
@@ -485,8 +589,8 @@
     </section>
 
     <section class="highlights">
-        <div class="hero">
-            <div class="container is-desktop highlights--header">
+        <div class="highlights--header">
+            <div class="container">
                 <h1 class="weight900 is-uppercase blue">Highlights of the Year</h1>
                 <div class="arrow-down-blue"></div>
             </div>
@@ -495,23 +599,22 @@
         <div class="container">
             <div class="is-uppercase highlights--nav">
                 <div class="button-highlights">
-                    <a href="#" class="button-legacy">Legacy Gifts</a>
+                    <a href="#" class="button-legacy highlightButton" id="legacy">Legacy Gifts</a>
                 </div>
                 <div class="button-highlights">
-                    <a href="#" class="button-pac">
+                    <a href="#" class="button-pac highlightButton" id="pac">
                         Professional <br>Advisory <br>Committee</a>                        
                 </div>
                 <div class="button-highlights">
-                    <a href="#" class="button-bol">Book of Life</a>
+                    <a href="#" class="button-bol highlightButton" id="bol">Book of Life</a>
                 </div>
                 <div class="button-highlights">
-                    <a href="#" class="button-philanthropy">Jewish Teen <br>Philanthropy</a>
+                    <a href="#" class="button-philanthropy highlightButton" id="teen-philanthropy">Jewish Teen <br>Philanthropy</a>
                 </div>
             </div>
-
-            <div class="highlights--container bg-grey">
+        <div class="siema">
+            <div class="highlights--container bg-grey" id="highlight">
                 <div class="columns is-gapless">
-
                     <div class="column is-two-thirds">
                         <div class="highlights--container__cardheader">
                             <img src="./src/scss/assets/michael_laurie_davis@2x.png" alt="">
@@ -527,7 +630,7 @@
                         </div>                            
                     </div>
                     <div class="column is-one-third  highlights--sideCard highlights--sideCard__legacy white is-italic">
-                        <div>
+                        <div class="portrait">
                             <img src="./src/scss/assets/judy_nathan_bronfman_bernick@2x.png" alt="">
                             <p class="neuton highlights--sideCard__photoCaption">Judy Nathan Bronfman Bernick</p>
                         </div>
@@ -552,7 +655,7 @@
                 </div>
             </div>
                             
-            <div class="highlights--container bg-grey columns is-gapless">
+            <div class="highlights--container bg-grey columns is-gapless" id="highlight">
                 <div class="column is-two-thirds">
                     <div class="highlights--container__cardheader">
                         <img src="./src/scss/assets/PAC@2x.png" alt="">
@@ -579,13 +682,17 @@
                 </div>
                 <div class="column is-one-third">
                     <div class="highlights--sideCard__pac  highlights--sideCard bg-pac white">
-                        <img src="./src/scss/assets/jamie_david_matlow@2x.png" alt="">
-                        <p class="highlights--sideCard__photoCaption">Jamie Golumbek and David Matlow</p>
-                        <h4>Professional Advisors Award of Excellence</h4>
-                        <p>The Professional Advisors Award of Excellence honours individuals who encourage their clients to consider charity as part of their estate or ﬁnancial planning process. They are the most ardent ambassadors and champions of the Jewish Foundation and set a proud example for other lawyers, accountants and estate planners in our community.</p>
-                        <p>This year, Jamie Golombek, Managing Director, Tax & Estate Planning with CIBC in Toronto, received the Jewish Foundation’s
-                        Professional Advisors Award of Excellence for his contribution to charitable giving through his professional practice, his
-                        volunteer service to the Jewish Foundation and for assisting in structuring gifts for the community through the Jewish Foundation.</p>
+                        <div class="portrait">
+                            <img src="./src/scss/assets/jamie_david_matlow@2x.png" alt="">
+                            <p class="highlights--sideCard__photoCaption">Jamie Golumbek and David Matlow</p>
+                        </div>
+                        <div>
+                            <h4>Professional Advisors Award of Excellence</h4>
+                            <p>The Professional Advisors Award of Excellence honours individuals who encourage their clients to consider charity as part of their estate or ﬁnancial planning process. They are the most ardent ambassadors and champions of the Jewish Foundation and set a proud example for other lawyers, accountants and estate planners in our community.<br>
+                            <p>This year, Jamie Golombek, Managing Director, Tax & Estate Planning with CIBC in Toronto, received the Jewish Foundation’s
+                            Professional Advisors Award of Excellence for his contribution to charitable giving through his professional practice, his
+                            volunteer service to the Jewish Foundation and for assisting in structuring gifts for the community through the Jewish Foundation.</p>
+                        </div>
                     </div>
                     
                     <div class="highlights--sideCard__pacQuote blue">
@@ -597,7 +704,7 @@
                 </div>
             </div>
 
-            <div class="highlights--container bg-grey columns is-gapless">
+            <div class="highlights--container bg-grey columns is-gapless" id="highlight">
                 <div class="column is-two-thirds">
                     <div class="highlights--container__cardheader">
                         <img src="./src/scss/assets/BOL@2x.png" alt="">
@@ -620,8 +727,10 @@
                 </div>
                 <div class="column is-one-third">
                     <div class="highlights--sideCard__bol bg-bol white highlights--sideCard">
-                        <img src="./src/scss/assets/laurie_sheff@2x.png" alt="">
-                        <p class="highlights--sideCard__photoCaption">Laurie Sheff <br>Book of Life Chair</p>
+                        <div class="portrait">
+                            <img src="./src/scss/assets/laurie_sheff@2x.png" alt="">
+                            <p class="highlights--sideCard__photoCaption">Laurie Sheff <br>Book of Life Chair</p>
+                        </div>
                         
                         <p class="neuton is-italic">For the past 15 years, community members who have left a legacy had the opportunity to be recognized through the Foundation’s
                         meaningful Book of Life program. They wrote their stories, focusing on their Jewish values, reasons for giving, and those
@@ -646,7 +755,7 @@
                         </div>
                     </div>
                     <div class="column is-one-third">
-                        <div class="highlights--sideCard__philanthropy highlights--sideCard bg-blue white">
+                        <div class="highlights--sideCard__philanthropy highlights--sideCard bg-blue white teen-philanthropy">
                             <div class="portrait">
                                 <img src="./src/scss/assets/jacob_david@2x.png" alt="">
                                 <p class="highlights--sideCard__photoCaption">Jacob David</p>
@@ -684,6 +793,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
 
@@ -727,11 +837,11 @@
                     <h4 class="weight700">Other giving vehicles:</h4>
                     <ul>
                         <li>
-                            <p class="weight700">Charitable Remainder Trust</p>
+                            <p class="weight700 doTogether--body__subheadings">Charitable Remainder Trust</p>
                             <p>An immediate tax receipt (present value based on life expectancy) for a future gift of real estate or assets</p>
                         </li>
                         <li>
-                            <p class="weight700">Gifts of RRSP’s or RRIF’s</p>
+                            <p class="weight700 doTogether--body__subheadings">Gifts of RRSP’s or RRIF’s</p>
                             <p>An ideal way to offset taxes owing by an estate</p>
                         </li>
                     </ul>
@@ -743,16 +853,16 @@
                     Fund offering your estate significant tax benefits.</p>
 
                     <h4 class="weight700">Gifts of Life Insurance</h4>
-                    <p class="weight700">Existing policies</p>
+                    <p class="weight700 doTogether--body__subheadings">Existing policies</p>
                     <p>By transferring ownership of an existing life insurance policy to the Jewish Foundation, the donor is entitled to an immediate
                     tax receipt for the fair market value of the policy.</p>
                     <p>In addition, all future premium payments are eligible for a donation tax receipt.</p>
 
-                    <p class="weight700">New Policies</p>
+                    <p class="weight700 doTogether--body__subheadings">New Policies</p>
                     <p>By designating the Jewish Foundation as owner and beneficiary of the life insurance policy, premium payments will be made
                     to the Jewish Foundation by the donor annually and are eligible for a donation tax receipt.</p>
 
-                    <h4>Charitable Bequests:</h4>
+                    <h4 class="doTogether--body__subheadings">Charitable Bequests:</h4>
                     <p>A gift in your Will is a simple and thoughtful way to leave a legacy. Whether it is a set amount or a percentage of the estate,
                     donors can make a difference for generations to come.</p>
                     <p class="weight700">Please consult your tax or estate planning professional to determine
@@ -765,7 +875,7 @@
     <section class="leadership">
         <div class="bg-blue white has-text-centered leadership--header">
             <div class="container">
-                <h1>Leadership & Partners</h1>
+                <h1 class="is-uppercase weight900">Leadership & Partners</h1>
                 <h3>We thank our leadership and our strategic partners</h3>
             </div>
         </div>
@@ -829,59 +939,28 @@
                     <img src="./src/scss/assets/mawer_logo.png" alt="">
                 </div>                
             </div>
-            <!-- <div class="container">
-                <div class="columns">
-                    <div class="column is-one-half">
-                        <div class="leadership--body__left">
-                            <h3>Foundation Trustees</h3>
-                            <div class="columns">
-                                <div class="column is-half">
-                                    <p>Leonard Abramsky</p>
-                                    <p>Stephen Altbaum</p>
-                                    <p>Stephen Bloom</p>
-                                    <p>Eric Cohen</p>
-                                    <p>Joel Cuperfain</p>
-                                    <p>Lisa Draper</p>
-                                    <p>Jordan Gnat</p>
-                                    <p>Mark Grammer</p>
-                                    <p>Alison Himel</p>
-                                    <p>Warren Kimel</p>
-                                    <p>Jay Klein</p>
-                                    <p>Michael Kuhl</p>
-                                    <p>Francy Kussner</p>
-                                    <p>Bruce Leboff</p>
-                                    <p>Joseph Lebovic</p>
-                                </div>
-                                <div class="column is-half">
-                                    <p>David Matlow, Chair</p>
-                                    <p>Harley Mintz</p>
-                                    <p>Faye Minuk</p>
-                                    <p>Mitchell Oelbaum</p>
-                                    <p>David Posluns</p>
-                                    <p>Keith Ray, Vice-Chair</p>
-                                    <p>Craig Rimer</p>
-                                    <p>Laurie Sheff</p>
-                                    <p>Anthony Sigel</p>
-                                    <p>Leah Silber</p>
-                                    <p>Fern Simpson Reich</p>
-                                    <p>Neil Sternthal</p>
-                                    <p>Mona Taylor</p>
-                                    <p>Dov Zevy</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-half">
-                        <img src="./src/scss/assets/cidel_logo.png" alt="">
-                        <img src="./src/scss/assets/fabricland_logo.png" alt="">
-                        <img src="./src/scss/assets/israel_bonds_logo.png" alt="">
-                        <img src="./src/scss/assets/JT_funders_network_logo.png" alt="">
-                        <img src="./src/scss/assets/mawer_logo.png" alt="">
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
+
+    <footer>
+        <div class="container blue">
+            <div class="footer--header weight700">
+                <h4>If you would like to discuss how the Jewish Foundation can help you achieve your philanthropic goals and leave a legacy for generations to come, contact us.</h4>
+            </div>
+            <div class="footer--contact is-uppercase">
+                <div class="footer--image">
+                    <img src="./src/scss/assets/foundationlogo.png" alt=""></div>
+                <div>
+                    <h4 class="weight700">sherman campus</h4>
+                    <h4>4600 bathurst st.</h4>
+                    <h4>toronto, on m2r3v2</h4>
+                    <h4 class="footer--break">P 416.631.5703 F 416.361.5701</h4>
+                    <h4>jewishfoundation@ujafed.org</h4>
+                    <h4>jewishfoundationtoronto.com</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 <script src="/assets/main.js"></script>

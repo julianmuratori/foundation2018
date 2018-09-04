@@ -7,6 +7,10 @@ section.financials {
 
     @include mobile {
         padding: 20px;
+
+        svg {
+            display: none;
+        }
         
         h2.nbsp {
             display: none;
@@ -17,14 +21,17 @@ section.financials {
 .financials--cell__flex {
     display: flex;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 5px;
+
+    @include mobile {
+        flex-direction: column;
+        border-bottom: 1px solid grey;
+        width: 75%;
+        margin: 0 auto;   
+    }
 
     @include phone {
-        flex-wrap: wrap;
-        border-bottom: 1px solid grey;
         width: 90%;
-        margin: 0 auto;
-        
     }
 
     .financials--cell__left {
@@ -38,7 +45,7 @@ section.financials {
         width: 60%;
     }
 
-    @include phone {
+    @include mobile {
         .financials--cell__left, .financials--cell__right {
             width: 100%;
             justify-content: center;
@@ -49,6 +56,10 @@ section.financials {
 
 .financials--container {
     padding-bottom: 50px;
+
+    @include mobile {
+        padding-bottom: 0;
+    }
 
     .arrow-down-blue {
         padding-bottom: 30px;
@@ -64,10 +75,75 @@ section.financials {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .financials--right {
+        padding: 0 60px;
+        margin-bottom: 20px;
+        p {
+            margin: 10px 0;
+        }
+    }
 }
 
 .financials--container__left {
+
+    .financials--left {
+        text-transform: none;
+        padding: 20px 40px;
+        margin: 15px auto;
+
+    }
     @include mobile {
         margin-bottom: 30px;
+    }
+}
+
+.financialsModal {
+    padding: 20px;
+    h4 {
+        margin: 5px 0;
+    }
+
+    .financialsModal--header {
+        h4 {
+            margin: 0;
+        }
+        h4:nth-of-type(2) {
+            padding-bottom: 15px;
+        }
+    }
+    .has-blue-underline {
+        border-bottom: 1px solid $brandPrimary;        
+    }
+
+    .financialsModal--body__cell {
+        p {
+            padding: 5px 0;
+        }
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            display: inline;
+        }
+    }
+
+    .financialsModal--footer__investment {
+        div {
+            display: flex;
+            p {
+                display: inline-block;
+                width: 100px;
+            }
+        }
+    }
+
+    .financialsModal--footer__IAC {
+        
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            margin: 5px 10px;
+        }
     }
 }

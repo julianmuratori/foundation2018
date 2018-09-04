@@ -36,6 +36,10 @@ h1 {
 h2 {
     font-size: 4.2rem;
     line-height: 1;
+    
+    @include phone {
+        font-size: 3.8rem;
+    }
 }
 
 h3 {

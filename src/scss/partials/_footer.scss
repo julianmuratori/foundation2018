@@ -1,0 +1,25 @@
+footer {
+    padding: 60px 0 30px;
+}
+
+.footer--header {
+    margin-left: 150px;
+}
+
+.footer--contact {
+    max-width: 450px;
+    margin-left: auto;
+    margin: 50px 0 50px auto;
+
+    .footer--image {
+        margin-bottom: 20px;
+    }
+    h4 {
+        font-size: 2rem;
+        padding-left: 50px;
+    }
+
+    .footer--break {
+        margin-top: 15px;
+    }
+}

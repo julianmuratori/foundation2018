@@ -19,6 +19,20 @@ section.faces {
 .philanthropy--cell {
     margin: 15px 0;
 
+    @include mobile {
+        margin: 15px 20px;
+        display: flex;
+    }
+
+    @include phone {
+        flex-direction: column;
+    }
+
+    .philanthropy--cell__portrait {
+        min-width: 250px;
+        margin-right: 20px;
+    }
+
     h4 {
         border-top: 5px solid $brandPrimary;
         margin: 7px 0;

@@ -2,7 +2,11 @@ section.impactStories {
     margin-top: 8px;
 }
 .impactStories--header {
-    padding: 50px 20px;
+    padding: 30px 20px;
+
+    @include mobile {
+        padding: 20px;
+    }
 }
 
 .impactStories--cell__left > .impactStories--cell__subheader {

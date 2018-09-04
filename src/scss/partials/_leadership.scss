@@ -1,5 +1,9 @@
 .leadership--header {
     padding: 30px 0;
+
+    h3 {
+        font-size: 2.4rem;
+    }
 }
 
 .leadership--body {
@@ -7,6 +11,10 @@
     background-image: url('./assets/tornoto_landscape@2x.png');
     background-position: center;
     background-size: cover;
+
+    p {
+        font-size: 1.8rem;
+    }
 
     @include phone {
         background-position: left;
@@ -31,7 +39,7 @@
 }
 
 .leadership--body__left, .leadership--logos {
-    padding-top: 50px;
+    padding: 50px 0 100px;
 
     @include mobile {
         padding: 20px 0;
