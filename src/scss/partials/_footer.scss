@@ -4,15 +4,27 @@ footer {
 
 .footer--header {
     margin-left: 150px;
+
+    @include phone {
+        margin: 0 auto;
+        padding: 0 50px;
+    }
 }
 
 .footer--contact {
     max-width: 450px;
-    margin-left: auto;
     margin: 50px 0 50px auto;
+
+    @include phone {
+        margin: 50px auto;
+    }
 
     .footer--image {
         margin-bottom: 20px;
+
+        @include phone {
+            padding-left: 50px;
+        }
     }
     h4 {
         font-size: 2rem;

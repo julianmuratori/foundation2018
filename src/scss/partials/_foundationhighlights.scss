@@ -4,6 +4,46 @@
     position: relative;
     z-index: 10;
     margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    
+    @include desktop {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 20px;
+    }
+
+    @include tablet-only {
+        margin-top: 30px;
+    }
+
+    .foundationHighlights--header__left {
+        width: 375px;
+        padding: 15px 25px;
+
+        @include desktop-only {
+            padding: 5px 15px;
+            width: 75%;
+            text-align: right;
+        }
+    }
+
+    .foundationHighlights--header__right {
+        width: 50%;
+        padding: 15px 20px;
+
+        @include widescreen-only {
+          width: 55%;
+          padding: 15px 10px;
+          text-align: right;  
+        }
+
+        @include desktop-only {
+            width: 75%;
+            text-align: right;
+            padding: 5px 15px;
+        }
+    }
 
     @include mobile {
         text-align: center;
@@ -11,20 +51,32 @@
     }
 }
 
+.foundationHighlights--left {
+    @include mobile {
+        padding: 0 50px;
+    }
+}
+
 .foundationHighlights--portrait {
-    transform: translateY(-90px);
+    
+    @include widescreen {        
+        transform: translateY(-90px);
+    }
     position: relative;
 
-    @include mobile {
+
+
+    @include touch {
         img {
             display: none;
         }
-
         transform: translateY(0);
-        background-image: url('./assets/david-ronit-image.png');
-        height: 600px;
+        background-image: url('./assets/david_ronit.png');
+        height: 300px;
         // width: 50%;
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -32,10 +84,19 @@
     position: absolute;
     bottom: 300px;
     left: 50px;
+
+    @include mobile {
+        bottom: 0;
+        right: 0;
+        
+        p {
+            color: $brandGrey;
+        }
+    }
 }
 
 .foundationHighlights--left__numbers {
-    @include mobile {
+    @include touch {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -70,12 +131,13 @@
             padding-top: 20px;
         }
     }
-    @include mobile {
+    @include touch {
         margin: 0 10px;
         width: calc(33.3% - 20px);
         display: flex;
         flex-direction: column;
         justify-content: center;
+        // align-items: center;
     }
 
     @media screen and (max-width: 550px) {
@@ -89,9 +151,12 @@
 
     &:after {
         display: none;
+        @include touch {
+            display: inline;
+        }
     }
 
-    @include mobile {
+    @include touch {
         border-bottom: 1px solid gray;
     }
 }
@@ -103,7 +168,7 @@
     border-bottom: 1px solid grey;
     line-height: 1;
 
-    @include mobile {
+    @include touch {
         width: 100%;
     }
 }
@@ -111,16 +176,28 @@
 
 
 .foundationHighlights--letter {
-    padding: 50px 125px 50px 45px;
-
+    
+    
     p {
         margin: 10px 0;
     }
-
+    
     .foundationHighlights--letter__signature {
         p {
             margin: 0;
         }
+    }
+    
+    @include widescreen {
+        padding: 50px 125px 50px 45px;
+    }
+
+    @include desktop-only {
+        padding: 20px 20px 40px;
+    }
+
+    @include touch {
+        padding: 20px 35px 40px;
     }
 
     @include mobile {

@@ -15,6 +15,10 @@
     div.column {
         padding: 0.75rem 60px;
 
+        @include touch {
+            padding: 0.75rem 20px;
+        }
+
         @include phone {
             padding: 0.75rem 20px;
         }

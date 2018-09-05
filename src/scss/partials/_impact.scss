@@ -27,31 +27,40 @@ section.impactStories {
 }
 
 .impactStories--cell__subheader {
-    min-height: 50px;
-    margin-bottom: 30px;
+    
+    @include fullhd {
+        min-height: 50px;
+    }
 
+    @include widescreen-only {
+        min-height: 70px;
+    }
+
+    @include desktop-only {
+        min-height: 100px;
+    }
+    
+    @include touch {
+        min-height: 0;
+    }
+    
+    margin-bottom: 30px;
+    
     p {
         margin: 0;
     }
 
-    @include touch {
-        min-height: 75px;
-    }
-
-    @include mobile {
-        min-height: 0;
-    }
 }
 
 .impactStories--cell__body {
-    min-height: 280px;
-
-    @include touch {
-        min-height: 315px;
+    @include fullhd {
+        min-height: 550px;
     }
-
-    @include mobile {
-        min-height: 210px;
+    @include widescreen-only {
+        min-height: 615px;
+    }
+    @include desktop-only {
+        min-height: 755px;
     }
 }
 
@@ -63,8 +72,19 @@ section.impactStories {
     }
 }
 
-.modal.sfap {
+.modal.march, .modal.sfap {
+    .bg-blue.white {
+        padding: 20px;
+        max-width: 450px;
+        margin: 0 auto;
+    }    
     .modal-background {
         background-color: rgba(10,10,10,0.5);
+    }
+}
+
+.impactStories--cell__button {
+    @include touch {
+        margin-top: 30px;
     }
 }

@@ -10,12 +10,28 @@
         }
         p {
             margin-bottom: 10px;
+
+            @include phone {
+                padding-left: 10px;
+            }
         }
         ul {
             list-style-type: circle;
         }
         .doTogether--body__subheadings {
             margin-bottom: 0;
+        }
+        .ellipse {
+            position: relative;
+            img {
+                position: absolute;
+                left: -25px;
+                top: 5px;
+
+                @include phone {
+                    left: -10px;
+                }
+            }
         }
     }
 

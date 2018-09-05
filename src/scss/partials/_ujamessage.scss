@@ -20,6 +20,10 @@
         position: absolute;
         bottom: 150px;
 
+        @include touch {
+            position: static;
+        }
+
         @include mobile {
             display: none;
         }

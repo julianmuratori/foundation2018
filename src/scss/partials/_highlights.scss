@@ -72,7 +72,21 @@
 }
 
 .highlights--container {
-    padding-bottom: 60px;
+
+    @include fullhd {
+        height: 1270px;
+    }
+
+    // @include widescreen-only {
+    //     height: 1320px;
+    // }
+
+    @include desktop {
+        height: 1320px;
+    }
+    @include touch {
+        // height: 1160px;
+    }
 
     .highlights--container__body {
         padding: 25px 50px 25px 100px;
@@ -128,8 +142,8 @@
 section.highlights div.highlights--container .highlights--sideCard {
     padding: 0 50px 40px !important;
 
-    @include mobile {
-        padding: 25px 50px 50px 50px !important;
+    @include tablet-only {
+        padding: 25px 50px !important;
                 
         img {
             width: 100%;
@@ -148,8 +162,19 @@ section.highlights div.highlights--container .highlights--sideCard.teen-philanth
 }
 
 .highlights--sideCard__legacy {
-    max-height: 700px;
     background-color: $highlights-hover;
+    
+    @include fullhd {
+        max-height: 700px;
+    }
+
+    @include widescreen-only {
+        max-height: 800px;
+    }
+
+    @include desktop-only {
+        max-height: 800px;
+    }
 
     @include mobile {
         max-height: none;
@@ -182,7 +207,7 @@ section.highlights div.highlights--container .highlights--sideCard.teen-philanth
 .highlights--container__lojegift {
     padding-left: 100px;
 
-    @include mobile {
+    @include touch {
         padding: 25px 50px 25px;
         display: flex;
 
@@ -210,9 +235,6 @@ section.highlights div.highlights--container .highlights--sideCard.teen-philanth
         margin: 0 auto;
 
         @include touch {
-            max-width: 165px;
-        }
-        @include mobile {
             min-width: 200px;
             margin-right: 30px;
         }
@@ -224,7 +246,7 @@ section.highlights div.highlights--container .highlights--sideCard.teen-philanth
     @include fullhd {
         min-height: 675px;
     }
-    @include mobile {
+    @include touch {
         display: flex;
     }
     @include phone {

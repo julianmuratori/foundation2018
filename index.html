@@ -31,21 +31,21 @@
 
 <!-- FOUNDATION HIGHLIGHTS AND LETTER FROM DAVID AND RONIT -->
     <section class="foundationHighlights container">
-        <div class="foundationHighlights--header is-uppercase columns">
+        <div class="foundationHighlights--header is-uppercase">
             
-            <div class="column is-4 is-offset-2 bg-blue white has-text-centered">
+            <div class="bg-blue white has-text-centered-widescreen foundationHighlights--header__left">
                 <h4>Foundation Highlights</h4>
             </div>
-            <div class="column is-6 bg-blue white">
+            <div class="bg-blue white foundationHighlights--header__right">
                 <h4>We help bring your philanthropic dreams to life</h4>
             </div>
             
         </div>
 
-        <div class="columns">
-            <div class="column is-6 foundationHighlights--left">
-                <div class="columns">
-                    <div class="is-two-fifths column foundationHighlights--left__numbers has-text-centered">
+        <div class="columns is-desktop">
+            <div class="column is-6-desktop foundationHighlights--left">
+                <div class="columns is-desktop">
+                    <div class="is-two-fifths-desktop column foundationHighlights--left__numbers has-text-centered">
                         <div class="foundationHighlights--numbers__cell">
                             <h3 class="weight300">2017-2018</h3>
                             <p>fiscal year</p>
@@ -86,8 +86,9 @@
                         </div>
                     </div>
     
-                    <div class="is-three-fifths column foundationHighlights--portrait">
-                        <img src="./src/scss/assets/david-ronit-image.png" alt="">
+                    <div class="is-three-fifths-desktop column foundationHighlights--portrait">
+                        <img src="./src/scss/assets/david-ronit-image.png" alt="" class="david-ronit-large">
+                        <!-- <img src="./src/scss/assets/david_ronit.png" alt="" class="david-ronit-tablet"> -->
                         <div class="foundationHighlights--portrait__text neuton white">
                             <p>Dreams without action remain</p>
                             <p>intangible thoughts...</p>
@@ -97,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="is-6 column foundationHighlights--letter blue">
+            <div class="is-6-desktop column foundationHighlights--letter blue">
                 <p>The Jewish Foundation of Greater Toronto is here to bring your philanthropic dreams to life.</p>
                 <p>We all have dreams. For ourselves, our families, our community, our country and our world. But we are not just dreamers,
                 we are doers. Dreams without action remain intangible thoughts. Dreams with action change the future.</p>
@@ -121,12 +122,12 @@
                 to life.</p>
                 <div class="columns is-mobile">
                     <div class="column is-half foundationHighlights--letter__signature">
-                        <img src="" alt="">
+                        <img src="./src/scss/assets/david-signature.png" alt="">
                         <p>david matlow</p>
                         <p>chair, jewish foundation</p>
                     </div>
                     <div class="column is-half foundationHighlights--letter__signature">
-                        <img src="" alt="">
+                        <img src="./src/scss/assets/ronit_signature.png" alt="">
                         <p>ronit holtzman</p>
                         <p>vp philanthropy,</p>
                         <p>planned giving & endowments</p>
@@ -137,9 +138,10 @@
     </section>
 
 <!-- MESSAGE FROM UJA -->
+
     <section class="ujaMessage container bg-offWhite">
-    <div class="columns">
-        <div class="ujaMessage--headline column is-half">
+    <div class="columns is-desktop">
+        <div class="ujaMessage--headline column is-half-desktop">
             <div class="ujaMessage--headline__container">
                 <h1 class="is-uppercase blue weight900">life is built</h1>
                 <h1 class="is-uppercase blue weight900">on strong</h1>
@@ -155,7 +157,7 @@
         </div>
 
 
-        <div class="ujaMessage--letter column is-half">
+        <div class="ujaMessage--letter column is-half-desktop">
             <div class="ujaMessage--letter__portraits columns is-mobile">
                 <div class="column is-half bruce-and-adam">
                     <img src="./src/scss/assets/bruce_leboff.png" alt="">
@@ -205,8 +207,8 @@
         
         <div class="container">
             <div class="arrow-down-blue"></div>
-            <div class="columns">
-                <div class="column is-half impactStories--cell impactStories--cell__left">
+            <div class="columns is-desktop">
+                <div class="column is-half-desktop impactStories--cell impactStories--cell__left">
                     <div class="impactStories--cell__subheader neuton weight700">
                         <p class="blue">Through the Jewish Foundation, our generous donors support hundreds of charities, projects, and programs each year.</p>
                     </div>
@@ -220,6 +222,12 @@
                             teach participants about the Jewish communities that once flourished in Europe, better understand the devastation of
                             the Holocaust, and develop a deep appreciation for the survival of the Jewish people and the creation of the State of
                             Israel.</p>
+                        <p class="blue">To mark the 30th anniversary, supporters of the March of the Living established a permanent fund at the Jewish Foundation
+                        that will provide travel subsidies and fund curriculum enhancements for the March and other Holocaust related travel programs.
+                        The Fund is comprised of Living Legacy Funds named after each of the survivor educators who over the last 30 years have inspired
+                        generations of Marchers by sharing their experiences on these trips. Contributions to the Living Legacy Funds are intended
+                        to be ongoing. The Jewish Foundation’s role in the design, implementation and ongoing administration of the March of the
+                        Living Funds demonstrates the flexibility of the Jewish Foundation to fashion customized solutions to the needs in our community.</p>
                     </div>
 
                     <div id="march" class="impactStories--cell__button bg-blue standardbutton standardbutton--blue is-uppercase">
@@ -229,12 +237,22 @@
                     <div class="modal march" id="marchmodal">
                         <div class="modal-background"></div>
                         <div class="modal-content">
-                            <div class="bg-white">hi</div>
+                            <div class="bg-blue white">
+                                <img src="./src/scss/assets/anita_ekstein_michelle.png" alt="">
+                                <p>Anita Ekstein with granddaughter Michelle</p>
+                                <p class="neuton is-italic">“It has been a privilege to participate on the March of the Living with my mom four times, including this year in 2018 which
+                                celebrated March of the Living’s 30th anniversary and my mom’s 18th trip.</p>
+                                <p class="neuton is-italic">The March is a life-changing educational experience that affects the survivors, chaperones and students, not only immediately,
+                                but in the years to come.</p>
+                                <p class="neuton is-italic">I know personally from my own children, nieces and nephews that the trip influenced them in two specific ways: to be “more
+                                Jewish” in some way, expressed in educational, career and advocacy choices, and to increase their love and support for Israel.”</p>
+                                <p class="neuton is-italic">Ruth Ekstein, Daughter of survivor Anita Ekstein</p>
+                            </div>
                         </div>
                         <button class="modal-close" id="close-sfap"></button>
                     </div>
                 </div>
-                <div class="column is-half impactStories--cell impactStories--cell__right bg-offWhite">
+                <div class="column is-half-desktop impactStories--cell impactStories--cell__right bg-offWhite">
                     <div class="impactStories--cell__subheader"></div>
                     <div class="impactStories--cell__body">
                         <h4 class="red weight700">The Supplementary Financial</h4>
@@ -244,6 +262,12 @@
                             comprehensive strategy to alleviate poverty and provide a critical safety net for the most financially vulnerable members
                             of the Jewish community. It is designed to assist those living in poverty by providing them with basic needs, social
                             connections, financial aid and employment skills.</p>
+                        <p class="blue">The Jewish Foundation helps fund SFAP through its Community Fund – the Foundation’s largest unrestricted fund – which was
+                        created to support projects that preserve and fortify the quality of Jewish life. In the last fiscal year, SFAP provided
+                        $2.3 million in financial support to more than 1,000 people – including 224 children under 17 years old and 153 seniors over
+                        65, living on less than $16,000 per year. In addition to financial aid, those in need received career and employment counselling,
+                        help in accessing government benefits and assistance to further their education.</p>
+                        <p class="blue">Thanks to our compassionate donors we are helping provide a more hopeful future to people in our community living in poverty</p>
                     </div>
 
                     <div id="sfap" class="impactStories--cell__button bg-blue standardbutton standardbutton--blue is-uppercase">
@@ -253,7 +277,19 @@
                     <div class="modal sfap" id="sfapmodal">
                         <div class="modal-background"></div>
                         <div class="modal-content">
-                            <div class="bg-white">hi</div>
+                            <div class="bg-blue white">
+                                <img src="./src/scss/assets/yana_SFAP.png" alt="">
+                                <p>Yana G.* is a Russian immigrant with two young children who suffered through an abusive marriage for 12 years before turning
+                                to Jewish Family & Child for help.</p>
+                                <p>Through funding from the Supplementary Financial Assistance Program, Yana was able to escape domestic abuse and receive assistance
+                                to begin a new life. She received counselling, support with a subsidized housing application, help with rent payments, social
+                                work visits, furniture and assistance with summer camp for her children. She was also given a great deal of emotional support
+                                and encouraged to pursue certiﬁcation as a Personal Support Worker. The impact of the Jewish Foundation on the lives of Yana
+                                and her children, and others living under similar conditions, cannot be overstated.</p>
+                                <p>Today, with the ﬁnancial support of our generous donors, Yana is employed, and she and her children are safe and connected
+                                to the wider Jewish community.</p>
+                                <p>*Not her real name</p>
+                            </div>
                         </div>
                         <button class="modal-close" id="close-sfap"></button>
                     </div>
@@ -269,15 +305,16 @@
                 <div class="columns">
                     <div class="column is-half is-uppercase white financials--header__text">
                         <!-- <h2 class="nbsp">&nbsp;</h2> -->
-                        <h2 class="weight900">Foundation</h2>
+                        <h2>Foundation</h2>
                         <h2 class="weight900">Financial Highlights</h2>
                     </div>
-                    <div class="column is-half">
-                        <!-- <img src="./src/scss/assets/pie_icon.png" alt=""> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58px" height="58px">
-                            <image x="0px" y="0px" width="58px" height="58px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAQAAABLsoKjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCBgLMR2bi6ASAAABM0lEQVRYw+3XvUoDQRSG4XeSRVHQFDYiWljEyiaCxEJIZWMjacTC2sLOwi5gQAjW3oFVLsW9gICQyh9QVCRgoYXFZ7eFMzsrgUXUc6rhfJx59rDbrGPsUoVT5oLRLT0XmYxlReg8Dwx48YIF6ky79/FvjqKSdgL9Q0lTsclKKc9TUIYa+nvRpKyLBZvMBKNBWWidFuc52X0UFaQ0g9GI5QK2Buzy7PWP2YpvWqHJDddef5YGbZ4K903dnbfI/nfe6YU78QY3uCyci+7yA2WooYYaGkZ1pnB9aLUsNGGbIX2vX6XDAb2yUBi67te2JuiUtee/+pAMNdRQQw011FBDDTXU0D+EJsCKul6/mp1agXQxO+2p4aXr2elIr166BsT+T4XSnHSkmib1mJNeyWlJbzlp/xPeS7kH49rP4AAAAABJRU5ErkJggg=="
-                            />
-                        </svg>
+                    <div class="column is-half financials--header__icons">
+                        <div>
+                            <img src="./src/scss/assets/pyramid_icon (2).png" alt="">
+                            <img src="./src/scss/assets/pie-icon.png" alt="">
+                            <img src="./src/scss/assets/graph-icon.png" alt="">
+                            <img src="./src/scss/assets/barchart-icon.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -444,14 +481,14 @@
         <div class="container">
             <div class="arrow-down-blue"></div>
             <div class="columns">
-                <div class="column is-half philanthropy--subheader neuton weight700">
+                <div class="column is-half-desktop philanthropy--subheader neuton weight700">
                     <p class="red">A Jewish community like Toronto's does not just happen,</p>
                     <p> -- it has been built by people like you, committed to Jewish life and caring for our most vulnerable.</p>
                 </div>
             </div>
 
-            <div class="columns faces--container">
-                <div class="column is-one-fifth is-offset-1 philanthropy--cell">
+            <div class="columns is-multiline faces--container">
+                <div class="column is-one-fifth-widescreen is-offset-1-widescreen is-one-quarter-desktop is-half-tablet philanthropy--cell">
                     <div class="philanthropy--cell__portrait">
                         <img src="./src/scss/assets/terry_nadline_walman@2x.png" alt="">
                         <h4 class="red weight700">Terry & Nadine Walman</h4>
@@ -462,7 +499,7 @@
                         <p>We hope that our gift will impact future generations, and help to safeguard the Jewish values that sustain the community.</p>
                     </div>
                 </div>
-                <div class="column is-one-fifth philanthropy--cell">
+                <div class="column is-one-fifth-widescreen is-one-quarter-desktop is-half-tablet philanthropy--cell">
                     <div class="philanthropy--cell__portrait">
                         <img src="./src/scss/assets/ruthie_ladovsky@2x.png" alt="">
                         <h4 class="red weight700">Ruthie Ladovsky</h4>
@@ -475,7 +512,7 @@
                         <p>This plan is one that I wholeheartedly embrace.</p>
                     </div>
                 </div>
-                <div class="column is-one-fifth philanthropy--cell">
+                <div class="column is-one-fifth-widescreen is-one-quarter-desktop is-half-tablet philanthropy--cell">
                     <div class="philanthropy--cell__portrait">
                         <img src="./src/scss/assets/jodie_kaufman@2x.png" alt="">
                         <h4 class="red weight700">Jodie Kaufman Davis</h4>
@@ -490,7 +527,7 @@
                         <p>I believe that if we collaborate, there is great power in individual effort!</p>
                     </div>
                 </div>
-                <div class="column is-one-fifth philanthropy--cell">
+                <div class="column is-one-fifth-widescreen is-one-quarter-desktop is-half-tablet philanthropy--cell">
                     <div class="philanthropy--cell__portrait">
                         <img src="./src/scss/assets/eric_benchetrit@2x.png" alt="">
                         <h4 class="red weight700">Eric Benchetrit</h4>
@@ -508,7 +545,7 @@
             </div>
 
             <div class="columns">
-                <div class="column is-6 is-offset-1 philanthropy--footer neuton weight700 blue">
+                <div class="column is-half-desktop is-offset-1-desktop philanthropy--footer neuton weight700 blue">
                     <p>These are just some of the faces behind our family of donors that make our community one of the strongest and most successful
                     Jewish communities in the Diaspora today. We gratefully acknowledge all of our donors for their vision and generosity.</p>
                 </div>
@@ -557,12 +594,12 @@
             <h1 class="legacyOfLife--header weight300">Legacy <span class="neuton is-italic">of life</span></h1>
 
             <div class="columns">
-                <div class="column is-three-fifths is-offset-1">
+                <div class="column is-three-fifths-widescreen is-two-thirds-desktop is-offset-1-desktop">
                     <div class="legacyOfLife--subheader neuton is-italic">
                         <p><span class="weight700">With gratitude</span> The Jewish Foundation of Greater Toronto honours the memory of the following individuals who had the vision
                         and foresight to leave a legacy to benefit our community between July 1, 2017 – June 30, 2018</p>
                     </div>
-                    <div class="columns is-mobile legacyOfLife--body">
+                    <div class="columns is-mobile is-fluid legacyOfLife--body">
                         <div class="column one-third">
                             <p>Harvey Border z"l</p>
                             <p>Gerald Cohen z"l</p>
@@ -614,8 +651,8 @@
             </div>
         <div class="siema">
             <div class="highlights--container bg-grey" id="highlight">
-                <div class="columns is-gapless">
-                    <div class="column is-two-thirds">
+                <div class="columns is-desktop is-gapless">
+                    <div class="column is-two-thirds-desktop">
                         <div class="highlights--container__cardheader">
                             <img src="./src/scss/assets/michael_laurie_davis@2x.png" alt="">
                             <h1 class="bg-legacy legacy--header is-uppercase weight900 white">UJA <span class="weight700">Legacy Gifts</span></h1>
@@ -629,7 +666,7 @@
                                 We hope that, by establishing a Legacy Fund, we are helping to secure the Jewish future for our community."</p>
                         </div>                            
                     </div>
-                    <div class="column is-one-third  highlights--sideCard highlights--sideCard__legacy white is-italic">
+                    <div class="column is-one-third-desktop  highlights--sideCard highlights--sideCard__legacy white is-italic">
                         <div class="portrait">
                             <img src="./src/scss/assets/judy_nathan_bronfman_bernick@2x.png" alt="">
                             <p class="neuton highlights--sideCard__photoCaption">Judy Nathan Bronfman Bernick</p>
@@ -641,11 +678,11 @@
                             This is very important to me as it shall be our children who shall lead and be our community's future ambassadors.</p>
                     </div>
                 </div>
-                <div class="highlights--container__lojegift columns">
+                <div class="highlights--container__lojegift columns is-fluid">
                     <div class="column is-1">
                         <img src="./src/scss/assets/LOJE.png" alt="">
                     </div>
-                    <div class="column is-7">
+                    <div class="column is-7-desktop">
                         <h4 class="red weight700">Endowing a Lion of Judah gift</h4>
                         <p class="blue">A Lion of Judah Endowment (LOJE) is a key part of the UJA Legacy initiative. Through LOJE, Jewish women strengthen the Jewish
                             community by providing funds to meet needs at home, in Israel and around the world. This year, more than 80 women participated
@@ -815,36 +852,17 @@
                     <h4 class="weight700">Donor advised funds:</h4>
                     <p>Similar to a private foundation, a Donor Advised Fund allows you to recommend distributions from the Fund to charities of
                     your choice.</p>
-
-                    <ul>
-                        <li>
-                            <p>May be created with a minimum of $10,000</p>
-                        </li>
-                        <li>
-                            <p>Less burdensome and less expensive than operating a private foundation</p>
-                        </li>
-                        <li>
-                            <p>Gifts of appreciated securities can be donated “in-kind” without any capital gains tax</p>
-                        </li>
-                        <li>
-                            <p>Allows donors to recommend unlimited grants to registered charities each year</p>
-                        </li>
-                        <li>
-                            <p>Fund may be anonymous</p>
-                        </li>
-                    </ul>
+                    <p class="ellipse"><img src="./src/scss/assets/Ellipse.png" alt="">May be created with a minimum of $10,000</p>
+                    <p class="ellipse"><img src="./src/scss/assets/Ellipse.png" alt="">Less burdensome and less expensive than operating a private foundation</p>
+                    <p class="ellipse"><img src="./src/scss/assets/Ellipse.png" alt="">Gifts of appreciated securities can be donated “in-kind” without any capital gains tax</p>
+                    <p class="ellipse"><img src="./src/scss/assets/Ellipse.png" alt="">Allows donors to recommend unlimited grants to registered charities each year</p>
+                    <p class="ellipse"><img src="./src/scss/assets/Ellipse.png" alt="">Fund may be anonymous</p>
 
                     <h4 class="weight700">Other giving vehicles:</h4>
-                    <ul>
-                        <li>
-                            <p class="weight700 doTogether--body__subheadings">Charitable Remainder Trust</p>
-                            <p>An immediate tax receipt (present value based on life expectancy) for a future gift of real estate or assets</p>
-                        </li>
-                        <li>
-                            <p class="weight700 doTogether--body__subheadings">Gifts of RRSP’s or RRIF’s</p>
-                            <p>An ideal way to offset taxes owing by an estate</p>
-                        </li>
-                    </ul>
+                        <p class="weight700 doTogether--body__subheadings ellipse"><img src="./src/scss/assets/Ellipse.png" alt="">Charitable Remainder Trust</p>
+                        <p>An immediate tax receipt (present value based on life expectancy) for a future gift of real estate or assets</p>
+                        <p class="weight700 doTogether--body__subheadings ellipse"><img src="./src/scss/assets/Ellipse.png" alt="">Gifts of RRSP’s or RRIF’s</p>
+                        <p>An ideal way to offset taxes owing by an estate</p>
                 </div>
                 <div class="column is-half">
                     <h4 class="red weight700">A Gift in the Future</h4>
@@ -882,7 +900,7 @@
         <div class="leadership--body columns">
             <div class="bg-seethrough-blue column is-half">
                 <!-- <div class="container"> -->
-                    <div class="leadership--body__left white">
+                    <div class="leadership--body__left white has-text-centered-mobile">
                         <h3>Foundation Trustees</h3>
                         <div class="columns is-mobile">
                             <div class="column is-half">
@@ -937,7 +955,10 @@
                 </div>
                 <div class="leadership--logos__image">
                     <img src="./src/scss/assets/mawer_logo.png" alt="">
-                </div>                
+                </div>
+                <div class="leadership--logos__image">
+                    <img src="./src/scss/assets/wow-logo.png" alt="">
+                </div>
             </div>
         </div>
     </section>

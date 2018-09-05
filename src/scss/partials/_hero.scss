@@ -5,11 +5,11 @@
     // background: blue;
     background-image: url('./assets/cover.jpg');
     height: 100vh;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    @include mobile {
+    @include touch {
         background-image: none;
         background-color: $brandPrimary;   
         padding: 20px;     
@@ -33,15 +33,10 @@
     }
 
     @include desktop {
-        margin-left: 150px;
+        margin-left: 75px;
     }
     
     @include touch {
-        margin-left: 50px;
-    }
-
-    @include mobile {
-        // background: $brandPrimary;
         margin-left: 0;
         height: 100%;
         padding: 50px 0;
@@ -51,6 +46,13 @@
         align-items: center;
         justify-content: space-around;
         text-align: center;
+        .arrow-down-red {
+            display: none;
+        }
+    }
+
+    @include mobile {
+        // background: $brandPrimary;
 
         h1 {
             font-size: 4.2rem;
@@ -73,9 +75,6 @@
                 font-size: 2rem;
                 font-weight: 300;
             }
-            .arrow-down-red {
-                display: none;
-            }
         }
     }
 
@@ -95,8 +94,11 @@
 .hero__tabletImage {
     display: none;
 
-    @include mobile {
+    @include touch {
         display: block;
+        img {
+            max-height: 500px;
+        }
     }
 
     @include phone {

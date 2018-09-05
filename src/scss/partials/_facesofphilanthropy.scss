@@ -14,6 +14,16 @@ section.faces {
     border-left: 3px solid $brandRed;
     padding-left: 30px;
     margin: 40px 0 20px;
+
+    @include touch {
+        margin-left: 20px;
+    }
+}
+
+.faces--container {
+    @include touch {
+        padding: 0 10px;
+    }
 }
 
 .philanthropy--cell {
@@ -31,7 +41,13 @@ section.faces {
     .philanthropy--cell__portrait {
         min-width: 250px;
         margin-right: 20px;
+        
+        @include tablet {
+            min-width: 0;
+            margin-right: 0;
+        }
     }
+
 
     h4 {
         border-top: 5px solid $brandPrimary;
@@ -48,4 +64,9 @@ section.faces {
 .philanthropy--footer {
     border-left: 5px solid $brandRed;
     padding-left: 20px;
+
+    @include touch {
+        margin-left: 20px;
+        padding-right: 20px;
+    }
 }
